@@ -1,11 +1,7 @@
-<h1><%= @local.name %> Profile</h1>
-<div>
-  <img src="https://imgcdn.stablediffusionweb.com/2024/6/12/4d688bcf-f53b-42b6-a98d-3254619f3b58.jpg" alt="Profile pic of Jane Doe">
-  <p>Categories:<% @local.calegories %></p>
-  <p>Age: <% @local.age %></p>
-  <p>Introduction: <% @local.description %></p>
-  <p><%= link_to reviews %></p>
+<h1 class="text-info border border-success w-25"><%= @local.name %>'s Profile</h1>
+<div class="text-center">
+  <img class="border border-rounded border border-success" src="https://scontent-ham3-1.xx.fbcdn.net/v/t39.30808-6/454448034_26798574076394558_8034063200881897635_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=V4frsomCDv0Q7kNvgEzC49f&_nc_zt=23&_nc_ht=scontent-ham3-1.xx&_nc_gid=Aa_W-EI1I4qVvJPb8lSi4YA&oh=00_AYBcTx1Q3MO8pY8n7cpjZ_Iu2ftWy2Gq40-bR9-H1yHKfA&oe=6728494A" alt="Profile pic of Joel">
+  <p class="">Categories:<%= @local.categories %></p>
+  <p>Age: <%= @local.age %></p>
+  <p>Introduction: <%= @local.description %></p>
 </div>
-<p>
-  <%= link_to See Availability%>
-</p>

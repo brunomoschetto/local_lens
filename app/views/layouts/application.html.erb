@@ -10,9 +10,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body bg>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="p-4">
+      <%= yield %>
+    </div>
   </body>
 </html>
