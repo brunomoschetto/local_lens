@@ -10,6 +10,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
+
   <body>
     <%# bootstrap navbar %>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -51,6 +52,8 @@
 <div class="container">
     <p class="notice"><%= notice %></p> <%#this comes from rails/device %>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="p-4">
+      <%= yield %>
+    </div>
   </body>
 </html>
