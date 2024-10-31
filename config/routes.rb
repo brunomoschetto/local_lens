@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :locals, only: [:index, :show]
   resource :bookings, only: [:index]
 
+  get '/styles', to: 'pages#styles'
 end

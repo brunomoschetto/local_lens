@@ -1,0 +1,83 @@
+.body-style{
+  background-color: #C3E6D4;
+}
+
+.ui-kit{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.outer-border{
+  border: 3px red solid;
+  border-radius: 14px;
+  width: 378px;
+
+}
+
+.inner-radius{
+  width: 372px;
+  height: 184px;
+  background-color: #E1918E;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-square {
+  width: 338px;
+  height: 151px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.first-p{
+  font-family: KoHo;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.delete-flexbox{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.delete-red{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.red-button{
+  font-family: KoHo;
+}
+
+.delete-green{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: green;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.green-button{
+  font-family: KoHo;
+}
