@@ -1,0 +1,11 @@
+<h1>Those are your bookings so far: </h1>
+
+<% @bookings.each do |booking| %>
+  <p>ID: <%= booking.id %></p>
+  <p>Local ID: <%= booking.local %></p>
+  <p>date <%= booking.date %></p>
+  <p>message: <%= booking.message %></p>
+  <p>capacity: <%= booking.capacity %></p>
+<% end %>
+
+<%# This is a basic index page where we'll show all the user's bookings %>
