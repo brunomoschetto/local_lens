@@ -1,0 +1,62 @@
+//--This is the button on the entry page--//
+
+.big-picture-button{
+  width: 397px;
+  height: 158px;
+  border-radius: 10px;
+  border: 3px solid #78CFA2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #FFB084;
+  font-weight: 700;
+  font-family: koho;
+  font-size: 40px;
+  text-shadow: 2px 0px 2px white, -2px 0px 2px white, 0px 2px 2px white, 0px -2px 2px white;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOt1F1tuNpe0bGO0Adyoz0npaYYLpvXyDiVA&s);
+  background-size: 100%;
+  letter-spacing: 2px;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+//--^^^This is the ned of the image button on the entry page^^^--//
+
+//-- This is the menu button--//
+
+.small-picture-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 189px;
+  height: 200px;
+  border: solid 3px #FFB084;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+.small-picture-box{
+  width: 183px;
+  height: 144px;
+  background-image: url("https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400");
+  background-size: cover;
+  border-radius: 7px 7px 0px 0px;
+}
+
+.small-picture-label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 189px;
+  color: white;
+  background-color: #FFB084;
+  font-family: koho;
+  font-size: 32px;
+  font-weight: 500;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+//--^^^This is the end of the menu button ^^^--//

@@ -1,4 +1,4 @@
-
+//--This is the smaller button attached to the profile of the local--//
 .review-button{
   width: 360px;
   height: 59px;
@@ -16,25 +16,9 @@
   box-shadow: 3px 3px 5px rgb(151, 151, 151);
 }
 
-.big-picture-button{
-  width: 397px;
-  height: 158px;
-  border-radius: 10px;
-  border: 3px solid #78CFA2;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  color: #FFB084;
-  font-weight: 700;
-  font-family: koho;
-  font-size: 40px;
-  text-shadow: 2px 0px 2px white, -2px 0px 2px white, 0px 2px 2px white, 0px -2px 2px white;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOt1F1tuNpe0bGO0Adyoz0npaYYLpvXyDiVA&s);
-  background-size: 100%;
-  letter-spacing: 2px;
-  box-shadow: 3px 3px 5px rgb(151, 151, 151);
-}
+//--^^^This is the end of the smaller button attached to the profile of the local^^^--//
 
+//--This is the bigger button attached to the profile of the local--//
 .availability-button{
   width: 396px;
   height: 60px;
@@ -52,6 +36,10 @@
   box-shadow: 3px 3px 5px rgb(151, 151, 151);
 }
 
+//--^^^This is the end of the bigger button attached to the profile of the local^^^--//
+
+//--This is the forgt password button attached to the login page--//
+
 .forget-password-button{
   width: 180px;
   height: 33px;
@@ -68,6 +56,11 @@
   align-items: center;
   box-shadow: 3px 3px 5px rgb(151, 151, 151);
 }
+
+//--^^^This is the end of the forget password button attached to the login page^^^--//
+
+
+//--This is the cancel button(NOT THE CANCEL POP UP NORE THE BUTTONS OF THE CANCEL POP-UP)--//
 
 .cancel-button-outer{
   border: 3px red solid;
@@ -95,3 +88,5 @@
   font-weight: 600;
   color: red;
 }
+
+//--This is the end of the cancel button(NOT THE CANCEL POP UP NORE THE BUTTONS OF THE CANCEL POP-UP)--//
