@@ -3,12 +3,17 @@
   width: 360px;
   height: 59px;
   border: solid 3px #FFB084;
-  font-size: 32px;
   color: #FFB084;
   text-align: center;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 600;
   background-color: #C3E6D4;
+  font-family: koho;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
 }
 
 .big-picture-button{
@@ -16,4 +21,77 @@
   height: 158px;
   border-radius: 10px;
   border: 3px solid #78CFA2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #FFB084;
+  font-weight: 700;
+  font-family: koho;
+  font-size: 40px;
+  text-shadow: 2px 0px 2px white, -2px 0px 2px white, 0px 2px 2px white, 0px -2px 2px white;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOt1F1tuNpe0bGO0Adyoz0npaYYLpvXyDiVA&s);
+  background-size: 100%;
+  letter-spacing: 2px;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+.availability-button{
+  width: 396px;
+  height: 60px;
+  border: solid 3px #78CFA2;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #FFB084;
+  font-family: koho;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+.forget-password-button{
+  width: 180px;
+  height: 33px;
+  border: solid 3px #78CFA2;
+  color: red;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: white;
+  font-family: koho;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+.cancel-button-outer{
+  border: 3px red solid;
+  background-color: #E1918E;
+  border-radius: 14px;
+  width: 336px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+.cancel-button-inner{
+  width: 315px;
+  height: 35px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: koho;
+  font-size: 32px;
+  font-weight: 600;
+  color: red;
 }
