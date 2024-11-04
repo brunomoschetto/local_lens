@@ -1,7 +1,18 @@
-<h1 class="text-info border border-success w-25"><%= @local.name %>'s Profile</h1>
-<div class="text-center">
-  <img class="border border-rounded border border-success" src="https://scontent-ham3-1.xx.fbcdn.net/v/t39.30808-6/454448034_26798574076394558_8034063200881897635_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=V4frsomCDv0Q7kNvgEzC49f&_nc_zt=23&_nc_ht=scontent-ham3-1.xx&_nc_gid=Aa_W-EI1I4qVvJPb8lSi4YA&oh=00_AYBcTx1Q3MO8pY8n7cpjZ_Iu2ftWy2Gq40-bR9-H1yHKfA&oe=6728494A" alt="Profile pic of Joel">
-  <p class="">Categories:<%= @local.categories %></p>
-  <p>Age: <%= @local.age %></p>
-  <p>Introduction: <%= @local.description %></p>
+
+<h1 class="text-header">
+  <%= @local.name %>'s Profile
+</h1>
+
+<div class="local-profile-card">
+
+  <img src="https://cdn.dribbble.com/users/5534/screenshots/14230133/profile_4x.jpg" alt="Bruno's image">
+
+  <div class="text-local-card">
+    <p><b>Categories:</b> <%= @local.categories %></p>
+    <p><b>Age: </b> <%= @local.age %></p>
+    <p><b>Introduction:</b> <%= @local.description %></p>
+  </div>
+
+  <p class=""><%= link_to "Reviews", "#", class:"review-button" %></p>
+  <p><%= link_to"See availability", "#", class: "availability-button", id:"availability-orange"%></p>
 </div>
