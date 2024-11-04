@@ -1,5 +1,6 @@
 //--This is the smaller button attached to the profile of the local--//
 .review-button{
+  text-decoration: none; //--to remove underlines from links
   width: 360px;
   height: 59px;
   border: solid 3px #FFB084;
@@ -20,6 +21,7 @@
 
 //--This is the bigger button attached to the profile of the local--//
 .availability-button{
+  text-decoration: none; //--to remove underlines from links
   width: 396px;
   height: 60px;
   border: solid 3px #78CFA2;
@@ -29,7 +31,7 @@
   font-weight: 500;
   background-color: #FFB084;
   font-family: koho;
-  font-size: 40px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
