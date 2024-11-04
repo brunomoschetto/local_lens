@@ -1,0 +1,92 @@
+//--This is the smaller button attached to the profile of the local--//
+.review-button{
+  width: 360px;
+  height: 59px;
+  border: solid 3px #FFB084;
+  color: #FFB084;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: #C3E6D4;
+  font-family: koho;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+//--^^^This is the end of the smaller button attached to the profile of the local^^^--//
+
+//--This is the bigger button attached to the profile of the local--//
+.availability-button{
+  width: 396px;
+  height: 60px;
+  border: solid 3px #78CFA2;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #FFB084;
+  font-family: koho;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+//--^^^This is the end of the bigger button attached to the profile of the local^^^--//
+
+//--This is the forgt password button attached to the login page--//
+
+.forget-password-button{
+  width: 180px;
+  height: 33px;
+  border: solid 3px #78CFA2;
+  color: red;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: white;
+  font-family: koho;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+//--^^^This is the end of the forget password button attached to the login page^^^--//
+
+
+//--This is the cancel button(NOT THE CANCEL POP UP NORE THE BUTTONS OF THE CANCEL POP-UP)--//
+
+.cancel-button-outer{
+  border: 3px red solid;
+  background-color: #E1918E;
+  border-radius: 14px;
+  width: 336px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+.cancel-button-inner{
+  width: 315px;
+  height: 35px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: koho;
+  font-size: 32px;
+  font-weight: 600;
+  color: red;
+}
+
+//--This is the end of the cancel button(NOT THE CANCEL POP UP NORE THE BUTTONS OF THE CANCEL POP-UP)--//
