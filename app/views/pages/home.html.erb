@@ -1,17 +1,20 @@
 
-<div class="container">
-  <h1>Local Lens</h1>
-
-  <p>Find me in app/views/pages/home.html.erb</p>
-  <div class="container text-cente">
-      <h3>Welcome to Local Lens homepage </h3>
-      <div class="row align-items-start">
-        <div class="col bg-white">
-          <h3>Whether it is finding a great place to eat or an awesome beach, Local Lens's local are here for you
-          Just search for locals by city then find yourperson with the categroy expertise you would like to explore in your city.
-          Book a date, then simply enjoy!</h3>
-        </div>
-      </div>
-    </div>
-    <p>link_to "See all the locals" locals_path%</p>
+<div class="main-div">
+  <div class="page-name-login">
+    <h1 class="page-name">Home</h1>
+    <%= link_to locals_path, class:"explore-cities" do %>
+      <div class="login">Login</div>
+    <% end %>
+  </div>
+  <p class="intro">
+    Welcome to <span class="local-lens">Local Lens</span>. Whether it is finding a great place to eat or an awesome beach, Local Lens's local are here for you
+    Just search for locals by city then find your person with the category of expertise you would like to explore in your city.
+    Book a date, then simply enjoy!
+  </p>
+  <%= link_to locals_path, class:"explore-cities" do %>
+    <div class="big-picture-button big-pic-explore">Explore Cities</div>
+  <% end %>
+  <%= link_to locals_path, class:"explore-cities" do %>
+    <div class="big-picture-button big-pic-catigories">Categories</div>
+  <% end %>
 </div>
