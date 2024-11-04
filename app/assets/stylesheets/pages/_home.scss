@@ -1,1 +1,38 @@
 // Specific CSS for your home-page
+.intro{
+  width: 397px;
+  font-size: 24px;
+  font-family: koho;
+  border: 3px solid #78CFA2;
+  border-radius: 10px;
+  color: #FFB084;
+  padding: 15px;
+  background-color: white;
+}
+
+.page-name{
+  color: #FFB084;
+  font-family: koho;
+  font-size: 32px;
+  border: 3px solid #78CFA2;
+  border-radius: 5px;
+  width: 89px;
+
+}
+
+.login{
+  width: 75px;
+  color: #FFB084;
+  font-family: koho;
+  font-size: 24px;
+}
+
+.page-name-login{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+
+.local-lens{
+  font-family: Kaushan Script;
+}
