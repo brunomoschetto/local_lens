@@ -1,7 +1,7 @@
 puts "Destroying all locals and users..."
+Booking.destroy_all
 Local.destroy_all
 User.destroy_all
-Booking.destroy_all
 
 puts "Creating users..."
 user1 = User.create!(
