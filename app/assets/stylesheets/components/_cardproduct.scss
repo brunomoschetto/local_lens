@@ -1,36 +1,66 @@
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 103px;
+  width: 396px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
+  border: 3px solid #FFB084;
+  padding: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
 }
 
 .card-product img {
-  height: 100%;
-  width: 120px;
+  height: 86px;
+  width: 77px;
   object-fit: cover;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.card-product h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+  border-radius: 10px;
 }
 
 .card-product p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
+  font-size: 16px;
+  font-family: 'KoHo', sans-serif;
+  margin: 0;
+  margin-left: 15px;
 }
 
-.card-product .card-product-infos {
-  padding: 16px;
+.rating {
+  background-color: #78CFA2;
+  padding: 5px;
+  margin: 10px;
+  color: white;
+  height: 34px;
+  width: 34px;
+  font-family: 'KoHo', sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-title h1 {
+  font-family: 'KoHo', sans-serif;
+  color: #FFB084;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.page-title h2 {
+  font-family: 'KoHo', sans-serif;
+  color: #FFB084;
+  font-weight: 500;
+  font-size: 24px;
+  text-shadow: 2px;
 }
