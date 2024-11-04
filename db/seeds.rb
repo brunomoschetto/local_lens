@@ -104,7 +104,7 @@ local1 = Local.create!(
   categories: "History, Food",
   age: 30,
   user_id: user1.id,
-  description: "Experienced guide with a passion for history and cuisine in Berlin."
+  description: "Guide with a passion for history and cuisine in Berlin."
 )
 
 local2 = Local.create!(
@@ -116,7 +116,7 @@ local2 = Local.create!(
   categories: "Art, Nature",
   age: 28,
   user_id: user2.id,
-  description: "Art enthusiast and nature lover with a deep knowledge of Munich's culture and scenery."
+  description: "Art enthusiast with a knowledge of Munich's culture and scenery."
 )
 
 local3 = Local.create!(
@@ -125,10 +125,10 @@ local3 = Local.create!(
   name: "Aditi Shriyam",
   languages: "Hindi, English",
   city: "Cologne",
-  categories: "Architecture, Nightlife",
+  categories: "Art, Nightlife",
   age: 35,
   user_id: user3.id,
-  description: "Architect with insider knowledge on Cologne's top nightlife spots and historic sites."
+  description: "Architect with knowledge on Cologne's top historic sites."
 )
 
 local4 = Local.create!(
@@ -140,7 +140,7 @@ local4 = Local.create!(
   categories: "Finance, Shopping",
   age: 29,
   user_id: user4.id,
-  description: "Finance professional with a knack for finding the best shopping spots in Frankfurt."
+  description: "Professional with a knack for finding the best shopping spots."
 )
 
 local5 = Local.create!(
@@ -152,7 +152,7 @@ local5 = Local.create!(
   categories: "Music, Culinary",
   age: 33,
   user_id: user5.id,
-  description: "Musician and foodie with an insider's guide to Hamburg's music scene and culinary delights."
+  description: "Foodie with an insider's guide to Hamburg's culinary delights."
 )
 
 local6 = Local.create!(
@@ -164,7 +164,7 @@ local6 = Local.create!(
   categories: "Technology, Art",
   age: 32,
   user_id: user6.id,
-  description: "Tech expert and art lover familiar with Stuttgart's top tech spots and galleries."
+  description: "Art lover familiar with Stuttgart's top tech spots and galleries."
 )
 
 local7 = Local.create!(
@@ -176,7 +176,7 @@ local7 = Local.create!(
   categories: "Culture, Food",
   age: 34,
   user_id: user7.id,
-  description: "Culture enthusiast specializing in Japanese cuisine and culture in Düsseldorf."
+  description: "Specializing in Japanese cuisine and culture in Düsseldorf."
 )
 
 local8 = Local.create!(
@@ -188,7 +188,7 @@ local8 = Local.create!(
   categories: "History, Festivals",
   age: 28,
   user_id: user8.id,
-  description: "History buff with deep knowledge of Nuremberg's festivals and historic landmarks."
+  description: "Deep knowledge of Nuremberg's festivals and historic landmarks."
 )
 
 local9 = Local.create!(
@@ -197,10 +197,10 @@ local9 = Local.create!(
   name: "Ahmed Khan",
   languages: "Arabic, English",
   city: "Bonn",
-  categories: "Science, Outdoor Activities",
+  categories: "Outdoor Activities",
   age: 30,
   user_id: user9.id,
-  description: "Science enthusiast and outdoor lover, showing the best of Bonn's natural and scientific spots."
+  description: "Showing the best of Bonn's natural and scientific spots."
 )
 
 local10 = Local.create!(
@@ -212,7 +212,7 @@ local10 = Local.create!(
   categories: "Art, Literature",
   age: 31,
   user_id: user10.id,
-  description: "Literature and art aficionado familiar with Leipzig's literary heritage and art scene."
+  description: "Familiar with Leipzig's literary heritage and art scene."
 )
 
 puts "Creating bookings..."
