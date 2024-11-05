@@ -1,11 +1,13 @@
-<h1>Those are your bookings so far: </h1>
+<div class="bookings-container">
+  <h1>Those are your bookings so far:</h1>
 
-<% @bookings.each do |booking| %>
-  <p>ID: <%= booking.id %></p>
-  <p>Local ID: <%= booking.local %></p>
-  <p>date <%= booking.date %></p>
-  <p>message: <%= booking.message %></p>
-  <p>capacity: <%= booking.capacity %></p>
-<% end %>
-
-<%# This is a basic index page where we'll show all the user's bookings %>
+  <% @bookings.each do |booking| %>
+    <div class="booking-card">
+      <p><strong>ID:</strong> <%= booking.id %></p>
+      <p><strong>Local ID:</strong> <%= booking.local.id %></p>
+      <p><strong>Date:</strong> <%= booking.date %></p>
+      <p><strong>Message:</strong> <%= booking.message %></p>
+      <p><strong>Capacity:</strong> <%= booking.capacity %></p>
+    </div>
+  <% end %>
+</div>
