@@ -5,25 +5,39 @@
     </h1>
   </div>
 
+<div class="local-container">
+  <div class="text-header">
+   <h1><%= @local.name %>'s <br>Profile</h1>
+   <p class="login">Login</p>
+  </div>
+
+
   <div class="local-profile-card">
-
-    <% if @local.photo.attached? %>
-      <%= cl_image_tag @local.photo.key  %>
-    <% else %>
-      <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
-    <% end %>
-
-    <div class="text-local-card">
-      <p><b>Name:</b> <%= @local.name %></p>
-      <p><b>Age: </b> <%= @local.age %></p>
-      <p><b>Languages:</b> <%= @local.languages %></p>
-      <p><b>Categories:</b> <%= @local.categories %></p>
-      <p><b>Description:</b> <%= @local.description %></p>
+    <div class="img-rating">
+      <% if @local.photo.attached? %>
+        <%= cl_image_tag @local.photo.key %>
+      <% else %>
+        <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
+      <% end %>
+      <div class="rating-stars">
+        Rating:
+        <h6><span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span></h6>
+      </div>
     </div>
 
-    <p class=""><%= link_to "Reviews", "#", class:"review-button" %></p>
+    <div class="text-local-card">
+      <p> <b class="bold">Categories: </b> <%= @local.categories %></p>
+      <p> <b class="bold">Age: </b> <%= @local.age %></p>
+      <p> <b class="bold">Introduction: </b> <%= @local.description %></p>
+      <p> All our locals are specialized in what they do. They are willing to provide you the most valuable experience in this town!.</p>
+    </div>
+
+    <p class=""><%= link_to "Reviews", "#", class:"review-button", id:"reviews-border" %></p>
+
   </div>
-  <div class="mt-3">
-    <p><%= link_to"See availability", "#", class: "availability-button", id:"availability-orange"%></p>
-  </div>
+  <p><%= link_to"Book this local", new_local_booking_path(@local), class: "availability-button", id:"availability-orange"%></p>
 </div>

@@ -2,37 +2,75 @@
 .local-profile-card {
   width: 94vw;
   border-radius: 10px;
-  border: 2px solid #C3E6D4;
-  background-color: white;
-  border-width: 3px;
-  border-color: #78CFA2;
-  align-items: center;
-  justify-content: center;
-  img {
-    width: 396px;
-    height: 256px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    object-fit: cover;
+  border: 2px solid #8ad494;
+  background-color: whitesmoke;
+  font-family: KoHo;
+  font-size: large;
+
+  .img-rating{
+    img {
+      width: 94vw;
+      border-radius: 10px;
+      padding-right: 4px;
+    }
+    .rating-stars{
+      position: relative;
+      bottom: 10px; right: 0px;
+      color: #dbab86;
+      font-weight: bold;
+      padding: 5px;
+      background-color: whitesmoke;
+      border: 3px solid #dbab86;
+      width: 35vw;
+      border-radius: 5px;
+      .checked{
+        color: #8ad494
+      }
+      span{
+        color: rgb(143, 141, 141);
+      }
+    }
   }
-  #availability-orange{
-    width: 94vw;
+
+  #reviews-border{
+    width: 74vw;
     height:15vw;
+    margin: auto;
   }
+  .bold {
+    color:#dbab86
+  }
+  p{
+    color:  #8ad494;
+    font-weight: 400;
+  }
+
 }
 
+#availability-orange{
+  width: 94vw;
+  height:15vw;
+  margin-left: 1px;
+  margin: 5% auto;
+}
 .text-local-card {
   margin-top: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .text-header {
-  border-radius: 10px;
-  border: 2px solid #C3E6D4;
-  padding: 10px;
-  font-family: 'KoHo', sans-serif;
-  font-size: 32px;
-  color: #FFB084;
-  // width: 200px;
-  // height: 10px;
+  display: flex;
+  h1{
+    color: #dbab86;
+    border-radius: 10px;
+    border: 2px solid #8ad494;
+    padding: 10px;
+  }
+  p{
+    display: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    padding-left: 30px;
+    text-shadow: 15px;
+  }
 }
