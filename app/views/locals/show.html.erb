@@ -1,3 +1,9 @@
+<div>
+  <div class="profile-header">
+    <h1 class="text-header">
+      <%= link_to "<    ", locals_path, class:"back-button" %><%= @local.first_name %>'s Profile
+    </h1>
+  </div>
 
 <div class="local-container">
   <div class="text-header">
@@ -8,7 +14,11 @@
 
   <div class="local-profile-card">
     <div class="img-rating">
-      <img src="https://cdn.dribbble.com/users/5534/screenshots/14230133/profile_4x.jpg" alt="Bruno's image">
+      <% if @local.photo.attached? %>
+        <%= cl_image_tag @local.photo.key %>
+      <% else %>
+        <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
+      <% end %>
       <div class="rating-stars">
         Rating:
         <h6><span class="fa fa-star checked"></span>
