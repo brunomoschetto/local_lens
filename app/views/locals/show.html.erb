@@ -1,18 +1,29 @@
-
-<h1 class="text-header">
-  <%= @local.name %>'s Profile
-</h1>
-
-<div class="local-profile-card">
-
-  <img src="https://cdn.dribbble.com/users/5534/screenshots/14230133/profile_4x.jpg" alt="Bruno's image">
-
-  <div class="text-local-card">
-    <p><b>Categories:</b> <%= @local.categories %></p>
-    <p><b>Age: </b> <%= @local.age %></p>
-    <p><b>Introduction:</b> <%= @local.description %></p>
+<div>
+  <div class="profile-header">
+    <h1 class="text-header">
+      <%= link_to "<    ", locals_path, class:"back-button" %><%= @local.first_name %>'s Profile
+    </h1>
   </div>
 
-  <p class=""><%= link_to "Reviews", "#", class:"review-button" %></p>
-  <p><%= link_to"See availability", "#", class: "availability-button", id:"availability-orange"%></p>
+  <div class="local-profile-card">
+
+    <% if @local.photo.attached? %>
+      <%= cl_image_tag @local.photo.key  %>
+    <% else %>
+      <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
+    <% end %>
+
+    <div class="text-local-card">
+      <p><b>Name:</b> <%= @local.name %></p>
+      <p><b>Age: </b> <%= @local.age %></p>
+      <p><b>Languages:</b> <%= @local.languages %></p>
+      <p><b>Categories:</b> <%= @local.categories %></p>
+      <p><b>Description:</b> <%= @local.description %></p>
+    </div>
+
+    <p class=""><%= link_to "Reviews", "#", class:"review-button" %></p>
+  </div>
+  <div class="mt-3">
+    <p><%= link_to"See availability", "#", class: "availability-button", id:"availability-orange"%></p>
+  </div>
 </div>
