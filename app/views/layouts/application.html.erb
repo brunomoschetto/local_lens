@@ -7,8 +7,9 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-
 
   <body class="body-color">
     <%# bootstrap navbar %>
@@ -16,6 +17,8 @@
     <img class="profile-pic" src="https://www.perfocal.com/blog/content/images/size/w960/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg" alt="Profile Pic">
     <p class="main-local-lens">Local Lens</p>
     <p class="burger"><%= image_tag("burger-menu-svgrepo-com.svg", size: "50x50", alt: "Burger Menu") %></p>
+    <p class="notice"><%= notice %></p> <%#this comes from rails/device %>
+    <p class="alert"><%= alert %></p>
     <div class="body-style">
       <%= yield %>
     </div>
