@@ -1,7 +1,7 @@
 
 <div class="big-div">
   <div class="page-name-login">
-    <h1 class="page-name">Home</h1>
+    <h1 class="page-name-home">Home</h1>
     <%= link_to new_user_session_path, class:"explore-cities" do %>
       <div class="login">Login</div>
     <% end %>
@@ -11,7 +11,7 @@
     Just search for locals by city then find your person with the category of expertise you would like to explore in your city.
     Book a date, then simply enjoy!
   </p>
-  <%= link_to locals_path, class:"explore-cities" do %>
+  <%= link_to search_path, class:"explore-cities" do %>
     <div class="big-picture-button big-pic-explore">Explore Locals</div>
   <% end %>
   <%= link_to locals_path, class:"explore-cities" do %>
