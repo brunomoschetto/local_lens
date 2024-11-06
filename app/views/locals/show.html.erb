@@ -1,14 +1,7 @@
-<div>
-  <div class="profile-header">
-    <h1 class="text-header">
-      <%= link_to "<    ", locals_path, class:"back-button" %><%= @local.first_name %>'s Profile
-    </h1>
-  </div>
-
-<div class="local-container">
+<div class="local-container row g-0">
   <div class="text-header">
-   <h1><%= @local.name %>'s <br>Profile</h1>
-   <p class="login">Login</p>
+   <h1><%= link_to "<    ", locals_path, class:"back-button" %><%= @local.first_name %>'s Profile</h1>
+   <h2><%= link_to "Login", new_user_session_path, class:"login"%> </h2>
   </div>
 
 
