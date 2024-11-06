@@ -4,13 +4,16 @@
   border-radius: 10px;
   border: 2px solid #8ad494;
   background-color: whitesmoke;
-  font-family: KoHo;
+  font-family: 'KoHo', sans-serif;
   font-size: large;
 
   .img-rating{
     img {
       width: 94vw;
-      border-radius: 10px;
+      height: 256px;
+      object-fit: cover;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
       padding-right: 4px;
     }
     .rating-stars{
@@ -56,21 +59,24 @@
 .text-local-card {
   margin-top: 10px;
   padding: 20px;
+  font-family: 'KoHo', sans-serif;
 }
 
 .text-header {
   display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
   h1{
-    color: #dbab86;
+    font-family: 'KoHo', sans-serif;
+    color: #FFB084;
     border-radius: 10px;
     border: 2px solid #8ad494;
-    padding: 10px;
+    padding: 5px;
   }
   p{
     display: flex-end;
     align-content: flex-end;
     align-items: flex-end;
-    padding-left: 30px;
     text-shadow: 15px;
   }
 }
