@@ -19,7 +19,11 @@
 
 .back-button{
   text-decoration: none; //--to remove underlines from links
+  font-family: 'KoHo', sans-serif;
   color: #FFB084;
+  font-weight: 500;
+  font-size: 16px;
+  text-shadow: 2px;
 }
 
 //--^^^This is the end of the smaller button attached to the profile of the local^^^--//
@@ -94,6 +98,20 @@
   font-size: 32px;
   font-weight: 600;
   color: red;
+}
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 4px 16px;
+  border-radius: 5px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
 }
 
 //--This is the end of the cancel button(NOT THE CANCEL POP UP NORE THE BUTTONS OF THE CANCEL POP-UP)--//

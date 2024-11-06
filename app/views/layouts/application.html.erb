@@ -14,13 +14,18 @@
   <body class="body-color">
     <div class="topbar">
       <img class="profile-pic" src="https://www.perfocal.com/blog/content/images/size/w960/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg" alt="Profile Pic">
-      <div class="main-local-lens">Local Lens</div>
+      <%= link_to "Local Lens", root_path, class: "main-local-lens" %>
       <%= image_tag("list.png", alt: "Burger Menu",  class:"burger") %>
-      <p class="notice"><%= notice %></p> <%#this comes from rails/device %>
-      <p class="alert"><%= alert %></p>
     </div>
     <div class="body-style">
       <%= yield %>
+      <%# <p class="notice"><%= notice %></p> <%#this comes from rails/device %>
+      <%# <p class="alert"><%= alert %></p>
+      <% if flash[:notice] %>
+        <div class="alert alert-success flash-container" role="alert">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
     </div>
   </body>
 </html>
