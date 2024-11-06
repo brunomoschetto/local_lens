@@ -12,13 +12,13 @@
   </head>
 
   <body class="body-color">
-    <%# bootstrap navbar %>
-    <nav class="navbar">
-    <img class="profile-pic" src="https://www.perfocal.com/blog/content/images/size/w960/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg" alt="Profile Pic">
-    <p class="main-local-lens">Local Lens</p>
-    <p class="burger"><%= image_tag("burger-menu-svgrepo-com.svg", size: "50x50", alt: "Burger Menu") %></p>
-    <p class="notice"><%= notice %></p> <%#this comes from rails/device %>
-    <p class="alert"><%= alert %></p>
+    <div class="topbar">
+      <img class="profile-pic" src="https://www.perfocal.com/blog/content/images/size/w960/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg" alt="Profile Pic">
+      <div class="main-local-lens">Local Lens</div>
+      <%= image_tag("list.png", alt: "Burger Menu",  class:"burger") %>
+      <p class="notice"><%= notice %></p> <%#this comes from rails/device %>
+      <p class="alert"><%= alert %></p>
+    </div>
     <div class="body-style">
       <%= yield %>
     </div>
