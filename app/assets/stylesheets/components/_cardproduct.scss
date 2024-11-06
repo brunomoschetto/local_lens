@@ -13,6 +13,13 @@
   padding: 10px;
 }
 
+.local-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .info {
   display: flex;
   align-items: center;
@@ -51,19 +58,20 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 24px;
+  width: 396px;
 }
 
 .page-title h1 {
   font-family: 'KoHo', sans-serif;
   color: #FFB084;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .page-title h2 {
   font-family: 'KoHo', sans-serif;
   color: #FFB084;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 16px;
   text-shadow: 2px;
 }
