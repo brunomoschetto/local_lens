@@ -1,27 +1,30 @@
-<div class="container mt-5 b">
+<div class="container row g-0">
   <div class="page-title">
-    <h1>Locals in this area</h1>
-    <h2>Login</h2>
+    <h1><%= link_to "<    ", root_path, class:"back-button" %>Locals in this area</h1>
+    <h2><%= link_to "Login", new_user_session_path, style: "text-decoration: none; color: inherit;" %> </h2>
   </div>
-  <% @locals.each do |local| %>
-    <%= link_to local_path(local), style: "text-decoration: none; color: inherit;" do %>
-      <div class="card-product">
-        <div class="info">
-          <% if local.photo.attached? %>
-            <%= cl_image_tag local.photo.key  %>
-          <% else %>
-            <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
-          <% end %>
-          <div class="card-product-infos">
-            <p>Name: <%= local.name %></p>
-            <p>Lang: <%= local.languages %></p>
-            <p>Categories: <%= local.categories %></p>
+  <div>
+    <% @locals.each do |local| %>
+      <%= link_to local_path(local), style: "text-decoration: none; color: inherit;" do %>
+        <div class="card-product">
+          <div class="info">
+            <% if local.photo.attached? %>
+              <%= cl_image_tag local.photo.key  %>
+            <% else %>
+              <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
+            <% end %>
+            <div class="card-product-infos">
+              <p><b class="bold">Name: <%= local.name %></b></p>
+              <p>Lang: <%= local.languages %></p>
+              <p>City: <%= local.city %></p>
+              <p>Categories: <%= local.categories %></p>
+            </div>
+          </div>
+          <div class="rating">
+            <%= "%.1f" % rand(3.0..5.0) %>
           </div>
         </div>
-        <div class="rating">
-          <%= 4.7 %>
-        </div>
-      </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
