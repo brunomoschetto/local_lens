@@ -1,9 +1,9 @@
-<div class="container row g-0">
+<div class="container">
   <div class="page-title">
-    <h1><%= link_to "<    ", root_path, class:"back-button" %>Locals in this area</h1>
+    <h1><%= link_to "<", root_path, style: "text-decoration: none; color: inherit;" %>    Locals in this area</h1>
     <h2><%= link_to "Login", new_user_session_path, style: "text-decoration: none; color: inherit;" %> </h2>
   </div>
-  <div>
+  <div class="local-index">
     <% @locals.each do |local| %>
       <%= link_to local_path(local), style: "text-decoration: none; color: inherit;" do %>
         <div class="card-product">
