@@ -1,0 +1,29 @@
+<div class="big-div">
+  <div class="search-realignment-div">
+    <div class="page-name-login">
+      <h1 class="page-name">Search</h1>
+      <%= link_to new_user_session_path, class:"explore-cities" do %>
+        <div class="login">Login</div>
+      <% end %>
+    </div>
+    <div class="city-age-search-div">
+      <%= form_with url:  locals_path, method: :get, class: "1" do %>
+        <div><%= 'City' %></div>
+        <div>
+          <%= text_field_tag :city,
+              params[:city],
+              class: "city_",
+              palceholder: "Type City Name Here"
+          %>
+        </div>
+        <div>
+          <%= label_tag 'Age' %>
+        </div>
+          <%= number_field_tag :age, nil, min: 18, max: 80, step: 1, class: "5", class: "number_" %>
+        <div class="submit_">
+          <%= submit_tag "Search", name: "", class: "3" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
