@@ -1,7 +1,46 @@
 .search-realignment-div{
-  width: 397px;
+  width: 430px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.city-age-search-div{
+  border: solid 3px #222E50;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.tag{
+  color: #222E50;
+  font-family: koho;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.search-outside{
+
+}
+
+.search-inside{
+  margin-top: 20px;
+}
+input[type=text]{
+  border: #e1ad01 solid 2px;
+  border-radius: 5px;
+  width: 357px;
+  margin-left: 20px;
+}
+
+.andor{
+  color: #222E50;
+  font-family: koho;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  font-size: 16px;
+  text-align: center;
 }

@@ -3,9 +3,9 @@
   width: 397px;
   font-size: 24px;
   font-family: koho;
-  border: 3px solid #78CFA2;
+  border: 3px solid #fccb06;
   border-radius: 10px;
-  color: #FFB084;
+  color: #222e50;
   padding: 15px;
   background-color: white;
 }
@@ -18,7 +18,7 @@
 
 .page-name-login{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 39px;
   margin-top: 20px;
   width: 397px;
@@ -29,17 +29,14 @@
 }
 
 .page-name{
-  color: #FFB084;
+  color: #222e50;
   font-family: koho;
   font-size: 32px;
-  border: 3px solid #78CFA2;
-  border-radius: 5px;
-  width: 89px;
 }
 
 .login{
   width: 65px;
-  color: #FFB084;
+  color: #222e50;
   font-family: koho;
   font-size: 24px;
 }
