@@ -4,9 +4,8 @@ Rails.application.routes.draw do
   get '/search', to: 'pages#search', as: :search
   devise_for :users
   root to: "pages#home"
-  get "up" => "rails/health#show", as: :rails_health_check
 
-  resources :locals, only: [:index, :show] do
+  resources :locals, only: [:index, :show, :new, :create] do
     resources :bookings, only: [:new, :create]
   end
 
