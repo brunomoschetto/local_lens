@@ -3,12 +3,12 @@
   text-decoration: none; //--to remove underlines from links
   width: 360px;
   height: 59px;
-  border: solid 3px #FFB084;
-  color: #FFB084;
+  border: solid 3px $golden;
+  color: $golden;
   text-align: center;
   border-radius: 10px;
   font-weight: 600;
-  background-color: #C3E6D4;
+  background-color: $light;
   font-family: koho;
   font-size: 32px;
   display: flex;
@@ -20,7 +20,7 @@
 .back-button{
   text-decoration: none; //--to remove underlines from links
   font-family: 'KoHo', sans-serif;
-  color: #FFB084;
+  color: $golden;
   font-weight: 500;
   font-size: 16px;
   text-shadow: 2px;
@@ -33,12 +33,12 @@
   text-decoration: none; //--to remove underlines from links
   width: 396px;
   height: 60px;
-  border: solid 3px #78CFA2;
+  border: solid 3px $godlen;
   color: white;
   text-align: center;
   border-radius: 10px;
   font-weight: 500;
-  background-color: #FFB084;
+  background-color: $golden;
   font-family: koho;
   font-size: 30px;
   display: flex;
@@ -55,7 +55,7 @@
   width: 180px;
   height: 33px;
   border: solid 3px #78CFA2;
-  color: red;
+  color: $golden;
   text-align: center;
   border-radius: 10px;
   font-weight: 500;
@@ -74,8 +74,8 @@
 //--This is the cancel button(NOT THE CANCEL POP UP NORE THE BUTTONS OF THE CANCEL POP-UP)--//
 
 .cancel-button-outer{
-  border: 3px red solid;
-  background-color: #E1918E;
+  border: 3px $golden solid;
+  background-color: $golden;
   border-radius: 14px;
   width: 336px;
   height: 55px;
