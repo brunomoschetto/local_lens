@@ -6,6 +6,10 @@
     Just search for locals by city then find your person with the category of expertise you would like to explore in your city.
     Book a date, then simply enjoy!
   </p>
+  <%= link_to new_local_path, class: "review-button" do %>
+    <div>Become a local</div>
+  <% end %>
+  <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
   <h2>Frequently searched cities</h2>
   <div class="card-grid">
     <div class="card-trip">
