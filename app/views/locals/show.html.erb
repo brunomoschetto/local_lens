@@ -1,7 +1,6 @@
 <div class="container">
   <div class="text-header">
-   <h1><%= link_to "<    ", locals_path, class:"back-button" %><%= @local.first_name %>'s Profile</h1>
-   <h2><%= link_to "Login", new_user_session_path, class:"login"%> </h2>
+   <h1><b><%= link_to "<    ", locals_path, class:"back-button" %></b><%= @local.first_name%> <%= @local.last_name %>'s Profile</h1>
   </div>
 
 
@@ -12,6 +11,7 @@
       <% else %>
         <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
       <% end %>
+
       <div class="rating-stars">
         Rating:
         <h6><span class="fa fa-star checked"></span>
@@ -23,14 +23,28 @@
     </div>
 
     <div class="text-local-card">
-      <p> <b class="bold">Categories: </b> <%= @local.categories %></p>
-      <p> <b class="bold">Age: </b> <%= @local.age %></p>
-      <p> <b class="bold">Introduction: </b> <%= @local.description %></p>
-      <p> All our locals are specialized in what they do. They are willing to provide you the most valuable experience in this town!.</p>
+      <p> <b class="accent">Age:&nbsp; </b> <%= @local.age %>
+      <br><b class="accent"> Categories: &nbsp;</b><%= @local.categories %></p>
     </div>
-
-    <p class=""><%= link_to "Reviews", "#", class:"review-button", id:"reviews-border" %></p>
-
   </div>
+
+  <div class="local-profile-card">
+    <div class="text-local-card">
+      <p> <b class="accent">Speciality in <%= @local.city %></b>:
+      <br><p> <%= @local.description %></p>
+    </div>
+  </div>
+
+    <%# <p class=""><%= link_to "Reviews", "#", class:"review-button", id:"reviews-border" %>
+
+  <div class="local-profile-card">
+    <div class="text-local-card">
+      <p><b class="accent">Languages</b></p>
+      <p><%= @local.first_name %> can speak with you in:<b> <%= @local.languages %></b>.</p>
+    </div>
+  </div>
+
   <p><%= link_to"Book this local", new_local_booking_path(@local), class: "availability-button", id:"availability-orange"%></p>
 </div>
+
+<%# <%= link_to "Login", new_user_session_path, class:"login"%#%>
