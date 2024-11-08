@@ -1,17 +1,27 @@
 <div class="bookings-container">
-  <h1>Those are your bookings so far:</h1>
+  <h1>Save the date with:</h1>
+
 
   <% @bookings.each do |booking| %>
     <div class="booking-card">
-      <p><strong>Booking ID:</strong> <%= booking.id %></p>
-      <p><strong>Local ID:</strong> <%= booking.local.id %></p>
-      <p><strong>Date:</strong> <%= booking.date %></p>
-      <p><strong>Message:</strong> <%= booking.message %></p>
-      <p><strong>Capacity:</strong> <%= booking.capacity %></p>
-    </div>
-    <div class="booking-edit mb-3">
-      <%= link_to "Edit", edit_booking_path(booking), class: "btn btn-ghost" %>
-      <%= link_to "Delete", booking_path(booking), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-ghost" %>
+      <div class="avatar-round">
+        <% if booking.local.photo.attached? %>
+          <%= cl_image_tag booking.local.photo.key %>
+          <%# <%= link_to local_path(booking.local)%> 
+        <% else %>
+          <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
+        <% end %>
+      </div>
+      <div class="text-local-card">
+        <p class="text-center"><b> <%= booking.local.first_name %>&nbsp; <%=booking.local.last_name %></b></p>
+        <p>Date: <b><%= booking.date %></b>&nbsp; in <%= booking.local.city %></p>
+        <p>Message:&nbsp;<%= booking.message %></p>
+      </div>
+      <p> <%= booking.capacity %> people</p>
+      <div class="booking-edit">
+        <%= link_to "Delete", booking_path(booking), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-ghost" %>
+        <%= link_to "Edit", edit_booking_path(booking), class: "btn btn-ghost" %>
+      </div>
     </div>
   <% end %>
 </div>

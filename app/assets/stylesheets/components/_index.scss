@@ -18,34 +18,34 @@
 .style-sheet-main-div >*{
   text-align: center;
   margin-bottom: 30px;
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 .body-color{
-  background-color: #C3E6D4;
+  background-color: $pale-blue;
 }
 
 .profile-pic{
   width: 54px;
   height: 54px;
   border-radius: 27px;
-  border: 1px solid #FFB084;
-  object-fit: cover
+  border: 1px solid $mustardyellow;
+  object-fit: cover;
 }
 
 .main-local-lens{
   font-size: 54px;
   font-family: kaushan script;
-  color: #FFB084;
+  color: $pale-blue;
   margin-left: 35px;
   text-decoration: none;
 }
 
 .topbar{
   height: 90px;
-  border-bottom: #FFB084 solid 2px;
-  border-top: #FFB084 solid 2px;
-  background-color: #C3E6D4;
+  border-bottom: $dark-blue solid 2px;
+  border-top: $dark-blue solid 2px;
+  background-color: $dark-blue;
   padding-left: 15px;
   display: flex;
   justify-content: space-between;
@@ -56,7 +56,7 @@
 .burger{
   width: 80px;
   height: 90px;
-  color: #FFB084;
+  color: $dark-blue;
   margin-left: 29px;
 }
 

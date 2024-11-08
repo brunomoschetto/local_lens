@@ -1,82 +1,82 @@
+// Header
+.text-header {
+  margin-top: 24px;
+  h1{
+    font-family: 'KoHo', sans-serif;
+    color: $dark-blue;
+    padding-top: 5px;
+  }
+}
 
+// Card container
 .local-profile-card {
-  width: 94vw;
+  width: 387px;
   border-radius: 10px;
-  border: 2px solid #8ad494;
-  background-color: whitesmoke;
+  border: 0.5px solid $dark-blue;
+  background-color: white;
   font-family: 'KoHo', sans-serif;
   font-size: large;
+  margin-top: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
 
+  // container with profile image and rating
   .img-rating{
     img {
-      width: 94vw;
+      width: 387px;
       height: 256px;
       object-fit: cover;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
-      padding-right: 4px;
+      padding-right: 2px;
     }
     .rating-stars{
       position: relative;
-      bottom: 10px; right: 0px;
-      color: #dbab86;
+      // bottom: 20px; left: 227px; (this is to the rigt border bottom of the pic)
+      top: 10px; left: 20px;
       font-weight: bold;
-      padding: 5px;
-      background-color: whitesmoke;
-      border: 3px solid #dbab86;
+      padding: auto;
+      background-color: white;
+      // border: 1px solid $pale-blue;
       width: 35vw;
       border-radius: 5px;
       .checked{
-        color: #8ad494
+        color: $mustardyellow;
       }
       span{
         color: rgb(143, 141, 141);
       }
     }
   }
-
-  #reviews-border{
-    width: 74vw;
-    height:15vw;
-    margin: auto;
-  }
-  .bold {
-    color:#dbab86
-  }
-  p{
-    color:  #8ad494;
+  .text-local-card {
+    margin-top: 0px;
+    padding: 20px;
+    font-family: 'KoHo', sans-serif;
+    color: $dark-blue;
     font-weight: 400;
   }
+  .accent {
+    color:$mustardyellow;
+  }
+   // This is for future see "reviews button" style ---
+  // #reviews-border{
+  //   width: 74vw;
+  //   height:15vw;
+  //   margin: auto;
+  // }
 
+
+  // .division-blue {
+  //   color: white;
+  //   background-color: $dark-blue;
+  //   width: 387px;
+  //   height: 55px;
+  //   border-top-right-radius: 10px;
+  //   border-top-left-radius: 10px;
+  // }
 }
 
 #availability-orange{
   width: 94vw;
-  height:15vw;
-  margin-left: 1px;
+  height: 15vw;
   margin: 5% auto;
-}
-.text-local-card {
-  margin-top: 10px;
-  padding: 20px;
-  font-family: 'KoHo', sans-serif;
-}
-
-.text-header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 24px;
-  h1{
-    font-family: 'KoHo', sans-serif;
-    color: #FFB084;
-    border-radius: 10px;
-    border: 2px solid #8ad494;
-    padding: 5px;
-  }
-  p{
-    display: flex-end;
-    align-content: flex-end;
-    align-items: flex-end;
-    text-shadow: 15px;
-  }
 }
