@@ -1,15 +1,15 @@
 .card-product {
   overflow: hidden;
-  height: 103px;
-  width: 396px;
+  height: 120px;
+  width: 400px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
-  margin-bottom: 24px;
-  border: 3px solid #FFB084;
+  margin-bottom: 30px;
+  border: 2px solid #E1AD01;
   padding: 10px;
 }
 
@@ -26,12 +26,10 @@
 }
 
 .card-product img {
-  height: 86px;
-  width: 77px;
+  height: 100px;
+  width: 100px;
   object-fit: cover;
   border-radius: 6px;
-  padding-top: 2px;
-  padding-bottom: 2px;
 }
 
 .card-product p {
@@ -42,14 +40,13 @@
 }
 
 .rating {
-  background-color: #78CFA2;
+  background-color: #E1AD01;
   padding: 5px;
-  margin: 10px;
   color: white;
-  height: 34px;
-  width: 34px;
+  height: 40px;
+  width: 40px;
   font-family: 'KoHo', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 3px;
 }
 
@@ -63,14 +60,14 @@
 
 .page-title h1 {
   font-family: 'KoHo', sans-serif;
-  color: #FFB084;
+  color: #222E50;
   font-weight: 500;
   font-size: 28px;
 }
 
 .page-title h2 {
   font-family: 'KoHo', sans-serif;
-  color: #FFB084;
+  color: #222E50;
   font-weight: 500;
   font-size: 16px;
   text-shadow: 2px;

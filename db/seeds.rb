@@ -121,7 +121,7 @@ local1 = Local.create!(
   name: "Bruno Moschetto",
   languages: "English, Italian",
   city: "Berlin",
-  categories: "History, Food",
+  categories: "Food",
   age: 30,
   user_id: user1.id,
   description: "Guide with a passion for history and cuisine in Berlin."
@@ -135,7 +135,7 @@ local2 = Local.create!(
   name: "Judit B",
   languages: "German, Spanish",
   city: "Munich",
-  categories: "Art, Nature",
+  categories: "Nature",
   age: 28,
   user_id: user2.id,
   description: "Art enthusiast with a knowledge of Munich's culture and scenery."
@@ -149,7 +149,7 @@ local3 = Local.create!(
   name: "Aditi Shriyam",
   languages: "Hindi, English",
   city: "Cologne",
-  categories: "Art, Nightlife",
+  categories: "Art",
   age: 35,
   user_id: user3.id,
   description: "Architect with knowledge on Cologne's top historic sites."
@@ -163,7 +163,7 @@ local4 = Local.create!(
   name: "Joel M. Armenta",
   languages: "Spanish, English",
   city: "Frankfurt",
-  categories: "Finance, Shopping",
+  categories: "Shopping",
   age: 29,
   user_id: user4.id,
   description: "Professional with a knack for finding the best shopping spots."
@@ -177,7 +177,7 @@ local5 = Local.create!(
   name: "Carlos Gomez",
   languages: "Spanish, German",
   city: "Hamburg",
-  categories: "Music, Culinary",
+  categories: "Music",
   age: 33,
   user_id: user5.id,
   description: "Foodie with an insider's guide to Hamburg's culinary delights."
@@ -191,7 +191,7 @@ local6 = Local.create!(
   name: "Emma Weber",
   languages: "German, French",
   city: "Stuttgart",
-  categories: "Technology, Art",
+  categories: "Technology",
   age: 32,
   user_id: user6.id,
   description: "Art lover familiar with Stuttgart's top tech spots and galleries."
@@ -205,7 +205,7 @@ local7 = Local.create!(
   name: "Hera Thakur",
   languages: "Japanese, English",
   city: "Düsseldorf",
-  categories: "Culture, Food",
+  categories: "Culture",
   age: 34,
   user_id: user7.id,
   description: "Specializing in Japanese cuisine and culture in Düsseldorf."
@@ -219,7 +219,7 @@ local8 = Local.create!(
   name: "Lena Bauer",
   languages: "German, Italian",
   city: "Nuremberg",
-  categories: "History, Festivals",
+  categories: "History",
   age: 28,
   user_id: user8.id,
   description: "Deep knowledge of Nuremberg's festivals and historic landmarks."
@@ -247,7 +247,7 @@ local10 = Local.create!(
   name: "Elena Petrov",
   languages: "Russian, German",
   city: "Leipzig",
-  categories: "Art, Literature",
+  categories: "Literature",
   age: 31,
   user_id: user10.id,
   description: "Familiar with Leipzig's literary heritage and art scene."

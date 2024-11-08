@@ -1,13 +1,14 @@
 // Specific CSS for your home-page
 .intro{
-  width: 397px;
+  width: 400px;
   font-size: 24px;
   font-family: koho;
-  border: 3px solid #fccb06;
+  border: 2px solid #E1AD01;
   border-radius: 10px;
-  color: #222e50;
+  color: #222E50;
   padding: 15px;
   background-color: white;
+  margin: 20px;
 }
 
 .big-div{
@@ -16,12 +17,22 @@
   align-items: center;
 }
 
+.big-div h2 {
+  font-family: koho;
+  color: #222E50;
+  width: 400px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
 .page-name-login{
   display: flex;
-  justify-content: center;
-  margin-bottom: 39px;
-  margin-top: 20px;
-  width: 397px;
+  justify-content: space-between;
+  margin-top: 15px;
+
 }
 
 .local-lens{
@@ -39,4 +50,59 @@
   color: #222e50;
   font-family: koho;
   font-size: 24px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-trip {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+
+.card-trip h6 {
+  font-family: koho;
+  color: #222E50;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid #E1AD01;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.card-grid p {
+  font-family: koho;
+  color: #222E50;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.card-trip img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.about {
+  width: 400px;
+  font-size: 12px;
+  font-family: koho;
+  border-radius: 10px;
+  color: #a4a4a4;
+  padding: 15px;
+  background-color: white;
+  margin: 20px;
 }
