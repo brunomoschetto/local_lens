@@ -1,20 +1,48 @@
 
 <div class="big-div">
-  <div class="page-name-login">
-    <h1 class="page-name-home">Home</h1>
-    <%= link_to new_user_session_path, class:"explore-cities" do %>
-      <div class="login">Login</div>
-    <% end %>
-  </div>
+  <%# <div class="page-name-login"><h1 class="page-name-home">Home</h1></div> %>
   <p class="intro">
     Welcome to <span class="local-lens">Local Lens</span>. Whether it is finding a great place to eat or an awesome beach, Local Lens's local are here for you
     Just search for locals by city then find your person with the category of expertise you would like to explore in your city.
     Book a date, then simply enjoy!
   </p>
-  <%= link_to search_path, class:"explore-cities" do %>
-    <div class="big-picture-button big-pic-explore">Explore Locals</div>
-  <% end %>
-  <%= link_to locals_path, class:"explore-cities" do %>
-    <div class="big-picture-button big-pic-catigories">Categories</div>
-  <% end %>
+  <h2>Frequently searched cities</h2>
+  <div class="card-grid">
+    <div class="card-trip">
+      <img src="https://plus.unsplash.com/premium_photo-1694475361345-52f267ae4d92?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJlcmxpbnxlbnwwfHwwfHx8MA%3D%3D" />
+      <p>Berlin, Germany's capital, with rich history, making it a must-visit destination for travelers.</p>
+      <%= link_to "https://en.wikipedia.org/wiki/Berlin", style: "text-decoration: none;" do %>
+        <h6>Explore now</h6>
+      <% end %>
+    </div>
+    <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1504801019156-beabdea673be?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb2duZXxlbnwwfHwwfHx8MA%3D%3D" />
+      <p>Cologne is famed for its stunning cathedral, offering visitors a blend of history and modern flair.</p>
+      <%= link_to "https://en.wikipedia.org/wiki/Cologne", style: "text-decoration: none;" do %>
+        <h6>Explore now</h6>
+      <% end %>
+    </div>
+    <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1705075833771-1f5e5b99ddeb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bXVuaWNofGVufDB8fDB8fHww" />
+      <p>Munich, Germany's heart of Bavaria, is known for its historic charm, beer gardens, and the famous Oktoberfest.</p>
+      <%= link_to "https://en.wikipedia.org/wiki/Munich", style: "text-decoration: none;" do %>
+        <h6>Explore now</h6>
+      <% end %>
+    </div>
+    <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1553547274-0df401ae03c9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aGFtYnVyZ3xlbnwwfHwwfHx8MA%3D%3D" />
+      <p>Hamburg, Germany's vibrant port city, is famous for its maritime charm, historic architecture, and lively waterfront.</p>
+      <%= link_to "https://en.wikipedia.org/wiki/Hamburg", style: "text-decoration: none;" do %>
+        <h6>Explore now</h6>
+      <% end %>
+    </div>
+  </div>
+  <div class="about">
+    <h6>About us:</h6>
+    <p>"Local Lens is a platform designed to connect users with local services, experiences, and resources in a convenient way.
+    Please note that while we strive to ensure accurate and up-to-date information. By using our app, you agree to these terms
+    and acknowledge that Local Lens is not liable for any direct or indirect consequences resulting from the use of the information or services provided."..............................................
+    ...........................................................................................................................
+    .........................................................................................................................</p>
+  </div>
 </div>

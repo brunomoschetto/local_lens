@@ -10,3 +10,38 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+/* Dropdown menu */
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown when hovering over the profile picture */
+.profile-dropdown:hover .dropdown-menu {
+  display: block;
+}
