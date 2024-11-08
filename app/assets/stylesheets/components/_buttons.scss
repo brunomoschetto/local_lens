@@ -115,3 +115,25 @@
 }
 
 //--This is the end of the cancel button(NOT THE CANCEL POP UP NORE THE BUTTONS OF THE CANCEL POP-UP)--//
+
+.city-search-button{
+  text-decoration: none; //--to remove underlines from links
+  width: 357px;
+  height: 40px;
+  border: solid 3px #e1ad01;
+  color: #e1ad01;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: #222e50;
+  font-family: koho;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
