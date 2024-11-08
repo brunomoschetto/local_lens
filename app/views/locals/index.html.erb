@@ -1,7 +1,6 @@
 <div class="container">
   <div class="page-title">
     <h1><%= link_to "<", root_path, style: "text-decoration: none; color: inherit;" %>    Locals in this area</h1>
-    <h2><%= link_to "Login", new_user_session_path, style: "text-decoration: none; color: inherit;" %> </h2>
   </div>
   <div class="local-index">
     <% @locals.each do |local| %>
@@ -14,10 +13,10 @@
               <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
             <% end %>
             <div class="card-product-infos">
-              <p><b class="bold">Name: <%= local.name %></b></p>
-              <p>Lang: <%= local.languages %></p>
-              <p>City: <%= local.city %></p>
-              <p>Categories: <%= local.categories %></p>
+              <p><b class="bold">Name: </b><%= local.name %></p>
+              <p><b class="bold">City: </b><%= local.city %></p>
+              <p><b class="bold">Lang: </b><%= local.languages %></p>
+              <p><b class="bold">Categories: </b><%= local.categories %></p>
             </div>
           </div>
           <div class="rating">
