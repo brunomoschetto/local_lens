@@ -8,7 +8,7 @@
   text-align: center;
   border-radius: 10px;
   font-weight: 600;
-  background-color: $pale-blue;
+  background-color: $paleblue;
   font-family: koho;
   font-size: 32px;
   display: flex;
@@ -31,7 +31,7 @@
 //--This is the bigger button attached to the profile of the local--//
 .availability-button{
   text-decoration: none; //--to remove underlines from links
-  width: 396px;
+  width: 397px;
   height: 60px;
   border: solid 3px $mustardyellow;
   color: white;
@@ -47,6 +47,24 @@
   box-shadow: 3px 3px 5px rgb(151, 151, 151);
 }
 
+.availability-localshow-btn{
+  text-decoration: none; //--to remove underlines from links
+  width: 387px;
+  height: 60px;
+  border: solid 0px $mustardyellow;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: $mustardyellow;
+  font-family: koho;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+  margin: 10px auto;
+}
 //--^^^This is the end of the bigger button attached to the profile of the local^^^--//
 
 //--This is the forgt password button attached to the login page--//
@@ -54,7 +72,7 @@
 .forget-password-button{
   width: 180px;
   height: 33px;
-  border: solid 3px $dark-blue;
+  border: solid 3px $darkblue;
   color: $mustardyellow;
   text-align: center;
   border-radius: 10px;
@@ -102,10 +120,10 @@
 
 .btn-ghost {
   text-decoration: none;
-  color: $pale-blue;
+  color: $paleblue;
   font-family: 'KoHo', sans-serif;
-  background-color: $dark-blue;
-  border: 2px solid $pale-blue;
+  background-color: $darkblue;
+  border: 2px solid $paleblue;
   padding: 10px 16px;
   border-radius: 5px;
   box-shadow: 3px 3px 5px rgb(151, 151, 151);
