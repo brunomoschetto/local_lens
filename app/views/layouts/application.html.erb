@@ -12,6 +12,7 @@
   </head>
 
   <body class="body-color">
+    <!--top navbar -->
     <div class="topbar">
       <%= link_to "Local Lens", root_path, class: "main-local-lens" %>
       <%# <img class="profile-pic" src="https://www.perfocal.com/blog/content/images/size/w960/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg" alt="Profile Pic"> %>
@@ -22,7 +23,7 @@
         <% else %>
           <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" class="profile-pic">
         <% end %>
-
+        <!--dropdown menu-->
         <div class="dropdown-menu">
           <% if user_signed_in? %>
             <%= link_to "My Profile", bookings_path %>
@@ -34,13 +35,18 @@
         </div>
       </div>
     </div>
-    <div>
+    <!-- end of top navbar-->
+
+    <div class="main-container">
       <%= yield %>
       <% if flash[:notice] %>
         <div class="alert alert-success flash-container" role="alert">
           <%= flash[:notice] %>
         </div>
       <% end %>
+    </div>
+
+      <!-- footbar -->
       <div class="bottombar">
         <%= link_to root_path do %>
           <i class="fa-solid fa-house"></i> Home
@@ -51,7 +57,9 @@
         <%= link_to search_path do %>
           <i class="fa-solid fa-magnifying-glass"></i> Search
         <% end %>
+        <!-- end of footbar-->
       </div>
-    </div>
+
+
   </body>
 </html>
