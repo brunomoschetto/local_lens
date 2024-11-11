@@ -116,6 +116,23 @@
   transition: opacity 0.3s ease;
 }
 
+.btn-explore {
+  width: 175px;
+  text-decoration: none;
+  color: $pale-blue;
+  font-family: 'KoHo', sans-serif;
+  background-color: $dark-blue;
+  border: 2px solid $pale-blue;
+  padding: 10px 16px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+.btn-explore:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
 //--This is the end of the cancel button(NOT THE CANCEL POP UP NORE THE BUTTONS OF THE CANCEL POP-UP)--//
 
 .city-search-button{

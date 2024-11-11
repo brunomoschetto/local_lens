@@ -6,11 +6,15 @@
     Just search for locals by city then find your person with the category of expertise you would like to explore in your city.
     Book a date, then simply enjoy!
   </p>
-  <%= link_to new_local_path, class: "review-button" do %>
-    <div>Become a local</div>
-  <% end %>
-  <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
-  <h2>Frequently searched cities</h2>
+  <div class="d-flex w-100 justify-content-around">
+    <%= link_to "Explore local", search_path, class: "btn btn-explore" %>
+    <%= link_to "Explore Categories", search_path, class: "btn btn-explore" %>
+  </div>
+  <%# <%= link_to new_local_path, class: "review-button" do %>
+    <%# <div>Become a local</div> %>
+  <%# <% end %>
+  <%# <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+  <h2 class="mt-4">Frequently searched cities</h2>
   <div class="card-grid">
     <div class="card-trip">
       <img src="https://plus.unsplash.com/premium_photo-1694475361345-52f267ae4d92?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJlcmxpbnxlbnwwfHwwfHx8MA%3D%3D" />
