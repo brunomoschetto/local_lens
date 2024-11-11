@@ -5,24 +5,26 @@
     </div>
     <div class="city-age-search-div">
       <%= form_with url:  locals_path, method: :get do %>
-        <div class="tag"><%= label_tag 'City' %></div>
+        <div class="all-in-one">
+             <div class="taggy"><%= label_tag 'City' %></div>
         <div>
           <%= text_field_tag :city,
               params[:city],
               class: "city_",
-              palceholder: "Type City Name Here", class: "city-feild"
+              palceholder: "Type City Name Here"
           %>
         </div>
         <div class="andor">AND/OR</div>
-        <div class="tag"><%= label_tag 'Categories' %></div>
+        <div class="taggy"><%= label_tag 'Categories' %></div>
           <div>
             <%= text_field_tag :categories,
                 params[:categories],
                 class: "categories_",
-                palceholder: "Type the category you would like", class: "categories-feild"
+                palceholder: "Type the category you would like"
             %>
           </div>
         <div class="submit-outside">
+        </div>
           <%= submit_tag "Search", name: "", class: "city-search-button" %>
         </div>
       <% end %>

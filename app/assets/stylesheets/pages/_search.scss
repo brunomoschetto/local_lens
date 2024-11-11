@@ -12,18 +12,14 @@
   margin-top: 10px;
 }
 
-.tag{
+.taggy{
   color: #222E50;
   font-family: koho;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-top: 20px;
   font-size: 20px;
-  margin-left: 20px;
-}
-
-.search-outside{
-
+  margin-left: 3px;
 }
 
 .search-inside{
@@ -32,8 +28,9 @@
 input[type=text]{
   border: #e1ad01 solid 2px;
   border-radius: 5px;
-  width: 357px;
+  width: 367px;
   margin-left: 20px;
+  height: 42px;
 }
 
 .andor{
@@ -42,5 +39,12 @@ input[type=text]{
   margin-bottom: 40px;
   margin-top: 60px;
   font-size: 16px;
-  text-align: center;
+  margin-left: 21px;
+}
+
+.all-in-one{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }

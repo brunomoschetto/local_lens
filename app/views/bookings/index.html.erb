@@ -7,7 +7,7 @@
       <div class="avatar-round">
         <% if booking.local.photo.attached? %>
           <%= cl_image_tag booking.local.photo.key %>
-          <%# <%= link_to local_path(booking.local)%> 
+          <%# <%= link_to local_path(booking.local)%>
         <% else %>
           <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
         <% end %>

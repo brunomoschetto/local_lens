@@ -1,0 +1,87 @@
+.login{
+  font-size: 32px;
+  font-family: koho;
+  width: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-main-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-inputs{
+  border: #222e50 solid 3px;
+  border-radius: 10px;
+  width: 397px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+input.emailpassword{
+  width: 367px;
+  border: 3px solid #e1ad01;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+ label{
+  color: #222E50;
+  font-family: koho;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 15px;
+ }
+
+ .form-check{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+ }
+
+ input:last-child{
+  margin-right: 15px;
+ }
+
+ input.login-checkbox{
+  margin-right: 15px;
+ }
+
+ .form-actions{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 391px;
+  margin-left: 23px;
+ }
+
+ input.login-boton{
+  color: #222E50;
+  font-family: koho;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  border: #e1ad01 3px solid;
+  background-color: #222e50;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+ }

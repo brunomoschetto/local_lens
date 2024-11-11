@@ -12,4 +12,7 @@ class PagesController < ApplicationController
 
   def categories
   end
+
+  def profile
+  end
 end
