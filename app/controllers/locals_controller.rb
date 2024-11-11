@@ -49,6 +49,11 @@ class LocalsController < ApplicationController
     end
   end
 
+  def by_city
+    @city = params[:city]
+    @locals = Local.where(city: @city)
+  end
+
   private
 
   def local_params

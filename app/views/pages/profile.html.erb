@@ -5,7 +5,6 @@
         <div class="avatar-profile">
           <% if current_user.photo.attached? %>
             <%= cl_image_tag current_user.photo.key %>
-            <%# <%= link_to local_path(booking.local)%>
           <% else %>
             <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
           <% end %>
@@ -14,10 +13,11 @@
           <p><b>Name: </b><%= current_user.first_name %>&nbsp; <%= current_user.last_name %></p>
           <p><b>Age: </b><%= current_user.age %></p>
           <p><b>Email ID: </b><%= current_user.email %></p>
-          <p><b>Password: </b><%= current_user.password %></p>
+          <p><b>Password: </b> ********** </p>
           <p><b>Description: </b><%= current_user.description %></p>
           <div class="profile-edit">
-            <%= link_to "Edit your profile", search_path, class: "btn btn-profile" %>
+            <%= link_to "Become a local", new_local_path, class: "btn btn-profile" %>
+            <%= link_to "Edit your profile", edit_user_registration_path(current_user), class: "btn btn-profile" %>
           </div>
         </div>
       </div>
