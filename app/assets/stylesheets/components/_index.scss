@@ -15,14 +15,20 @@
 
 
 //-- Do not touch this code or you will have 1000 years of bootstrap!!!!
+// <!--Stylesheet-->
 .style-sheet-main-div >*{
   text-align: center;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
+//application.html.erb
+.main-container {
+  margin-bottom: 60px;
+}
+
 .body-color{
-  background-color: $pale-blue;
+  background-color: $paleblue;
 }
 
 .profile-pic{
@@ -36,7 +42,7 @@
 .main-local-lens{
   font-size: 48px;
   font-family: kaushan script;
-  color: $pale-blue;
+  color: $paleblue;
   text-decoration: none;
   text-shadow:
     -1px -1px 0 #E1AD01,
@@ -48,13 +54,15 @@
 .topbar{
   height: 80px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  background-color: $dark-blue;
+  background-color: $darkblue;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 .bottombar{

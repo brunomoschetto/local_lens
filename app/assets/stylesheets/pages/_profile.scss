@@ -1,0 +1,60 @@
+.profile-container {
+  width: 400px;
+  font-size: 24px;
+  font-family: koho;
+  border: 2px solid #222E50;
+  border-radius: 10px;
+  color: #222E50;
+  background-color: white;
+}
+
+.profile-card {
+  width: 400px;
+}
+
+.avatar-profile img{
+  // margin-left: 120px;
+  width: 396px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.avatar-profile {
+  width: 396px;
+}
+
+h1 {
+  font-size: 32px;
+  font-family: koho;
+  color: #222E50;
+  font-weight: bold;
+}
+
+.text-profile-card {
+  width: 396px;
+  padding: 15px;
+}
+
+.pg-container {
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.btn-profile {
+  width: 180px;
+  text-decoration: none;
+  color: $pale-blue;
+  font-family: 'KoHo', sans-serif;
+  font-size: 20px;
+  background-color: $dark-blue;
+  border: 2px solid $pale-blue;
+  padding: 10px 16px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+
+.profile-edit {
+  text-align: center;
+}

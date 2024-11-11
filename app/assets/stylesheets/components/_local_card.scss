@@ -1,10 +1,19 @@
-// Header
+
+.container-local{
+  margin-top: -5px;
+  margin-bottom: -1px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .text-header {
   margin-top: 24px;
   h1{
     font-family: 'KoHo', sans-serif;
-    color: $dark-blue;
-    padding-top: 5px;
+    color: $darkblue;
   }
 }
 
@@ -12,7 +21,6 @@
 .local-profile-card {
   width: 387px;
   border-radius: 10px;
-  border: 0.5px solid $dark-blue;
   background-color: white;
   font-family: 'KoHo', sans-serif;
   font-size: large;
@@ -23,11 +31,10 @@
   .img-rating{
     img {
       width: 387px;
-      height: 256px;
+      height: 267px;
       object-fit: cover;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
-      padding-right: 2px;
     }
     .rating-stars{
       position: relative;
@@ -36,7 +43,6 @@
       font-weight: bold;
       padding: auto;
       background-color: white;
-      // border: 1px solid $pale-blue;
       width: 35vw;
       border-radius: 5px;
       .checked{
@@ -48,35 +54,30 @@
     }
   }
   .text-local-card {
-    margin-top: 0px;
-    padding: 20px;
     font-family: 'KoHo', sans-serif;
-    color: $dark-blue;
+    color: $darkblue;
     font-weight: 400;
+    padding: 15px 0px 10px 20px;
   }
   .accent {
     color:$mustardyellow;
   }
-   // This is for future see "reviews button" style ---
+
+}
+
+// This is for future see "reviews button" style ---
   // #reviews-border{
   //   width: 74vw;
   //   height:15vw;
   //   margin: auto;
-  // }
+// }
 
-
+//  This is testing a division of the card in darkblue
   // .division-blue {
   //   color: white;
-  //   background-color: $dark-blue;
+  //   background-color: $darkblue;
   //   width: 387px;
   //   height: 55px;
   //   border-top-right-radius: 10px;
   //   border-top-left-radius: 10px;
-  // }
-}
-
-#availability-orange{
-  width: 94vw;
-  height: 15vw;
-  margin: 5% auto;
-}
+// }
