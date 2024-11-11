@@ -8,12 +8,6 @@ Rails.application.routes.draw do
 
   resources :users, only: [:edit, :update]
 
-  resources :locals do
-    collection do
-      get 'by_city', to: 'locals#by_city'
-    end
-  end
-
   resources :locals, only: [:index, :show, :new, :create] do
     resources :bookings, only: [:new, :create]
   end
