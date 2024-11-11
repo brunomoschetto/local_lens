@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
   get 'bookings/index'
   get '/styles', to: 'pages#styles'
+  get '/profile', to: 'pages#profile'
   get '/search', to: 'pages#search', as: :search
   devise_for :users
   root to: "pages#home"
+
+  resources :users, only: [:edit, :update]
+
+  resources :locals do
+    collection do
+      get 'by_city', to: 'locals#by_city'
+    end
+  end
 
   resources :locals, only: [:index, :show, :new, :create] do
     resources :bookings, only: [:new, :create]

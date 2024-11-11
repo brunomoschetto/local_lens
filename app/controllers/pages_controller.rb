@@ -9,4 +9,7 @@ class PagesController < ApplicationController
 
   def search
   end
+
+  def profile
+  end
 end
