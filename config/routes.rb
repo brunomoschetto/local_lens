@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'bookings/index'
   get '/styles', to: 'pages#styles'
   get '/search', to: 'pages#search', as: :search
+  get '/categories', to: 'pages#categories', as: :categories
   devise_for :users
   root to: "pages#home"
 

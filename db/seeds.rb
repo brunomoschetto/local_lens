@@ -121,7 +121,7 @@ local1 = Local.create!(
   name: "Bruno Moschetto",
   languages: "English, Italian",
   city: "Berlin",
-  categories: "Food",
+  categories: "Foodies",
   age: 30,
   user_id: user1.id,
   description: "Guide with a passion for history and cuisine in Berlin."
@@ -177,7 +177,7 @@ local5 = Local.create!(
   name: "Carlos Gomez",
   languages: "Spanish, German",
   city: "Hamburg",
-  categories: "Music",
+  categories: "History",
   age: 33,
   user_id: user5.id,
   description: "Foodie with an insider's guide to Hamburg's culinary delights."
@@ -191,7 +191,7 @@ local6 = Local.create!(
   name: "Emma Weber",
   languages: "German, French",
   city: "Stuttgart",
-  categories: "Technology",
+  categories: "Tech",
   age: 32,
   user_id: user6.id,
   description: "Art lover familiar with Stuttgart's top tech spots and galleries."
@@ -205,7 +205,7 @@ local7 = Local.create!(
   name: "Hera Thakur",
   languages: "Japanese, English",
   city: "Düsseldorf",
-  categories: "Culture",
+  categories: "Nightlife",
   age: 34,
   user_id: user7.id,
   description: "Specializing in Japanese cuisine and culture in Düsseldorf."
@@ -219,7 +219,7 @@ local8 = Local.create!(
   name: "Lena Bauer",
   languages: "German, Italian",
   city: "Nuremberg",
-  categories: "History",
+  categories: "Photography",
   age: 28,
   user_id: user8.id,
   description: "Deep knowledge of Nuremberg's festivals and historic landmarks."
@@ -233,7 +233,7 @@ local9 = Local.create!(
   name: "Ahmed Khan",
   languages: "Arabic, English",
   city: "Bonn",
-  categories: "Outdoor Activities",
+  categories: "Sports",
   age: 30,
   user_id: user9.id,
   description: "Showing the best of Bonn's natural and scientific spots."
@@ -247,7 +247,7 @@ local10 = Local.create!(
   name: "Elena Petrov",
   languages: "Russian, German",
   city: "Leipzig",
-  categories: "Literature",
+  categories: "Mystery",
   age: 31,
   user_id: user10.id,
   description: "Familiar with Leipzig's literary heritage and art scene."
