@@ -1,0 +1,16 @@
+<div class="booking-card">
+  <div class="avatar-round">
+    <% if booking.user.photo.attached? %>
+      <%= cl_image_tag booking.user.photo.key %>
+    <% else %>
+      <img src="https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png" alt="local_img" style="border-radius: 10px">
+    <% end %>
+  </div>
+  <div class="text-local-card">
+    <p class="text-center"><b> <%= booking.user.first_name %>&nbsp; <%=booking.user.last_name %></b></p>
+    <p>Date: <b><%= booking.date %></b></p>
+    <p>Description: <%= booking.user.description %></p>
+    <p>Message: <%= booking.message %></p>
+  </div>
+  <p>Capacity: <%= booking.capacity %> people</p>
+</div>
