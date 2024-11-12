@@ -13,11 +13,18 @@
       <%# <--- Stars div %>
       <div class="rating-stars">
         Rating:
-        <h6><span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span></h6>
+        <h6>
+        <% rounded_rating = @average_rating.round %>
+
+        <% rounded_rating.times do %>
+          <span class="fa fa-star checked"></span>
+        <% end %>
+        <% (5 - rounded_rating).times do %>
+          <span class="fa fa-star"></span>
+        <% end %>
+
+        <span>(<%= "%.1f" % @average_rating %>)</span>
+        </h6>
       </div>
     </div>
     <%# <--Local card 2 %>

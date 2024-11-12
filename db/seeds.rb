@@ -382,3 +382,19 @@ Booking.create!(
 )
 
 puts "#{User.count} users, #{Local.count} locals, and #{Booking.count} bookings created."
+
+puts "Creating reviews..."
+
+Local.all.each do |local|
+  3.times do |i|
+    Review.create!(
+      local_id: local.id,
+      user_id: User.all.sample.id,
+      title: "Great experience with #{local.first_name}",
+      comment: "This was an amazing tour with #{local.first_name}. Learned a lot and had a wonderful time!",
+      rating: rand(1..5)
+    )
+  end
+end
+
+puts "#{Review.count} reviews created."
