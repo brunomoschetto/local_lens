@@ -1,8 +1,13 @@
+<h1 class="h1">Edit Your Booking</h1>
 <div class="container">
   <%= simple_form_for @booking do |f| %>
-    <%= f.input :date %>
-    <%= f.input :message %>
-    <%= f.input :capacity %>
-    <%= f.submit %>
+    <div class="grande-div">
+      <%= f.input :date %>
+      <%= f.input :message, class: "date" %>
+      <%= f.input :capacity, class: "date" %>
+      <div class="submity">
+        <%= f.submit %>
+      </div>
+    </div>
   <% end %>
 </div>

@@ -1,0 +1,72 @@
+.edit-h1{
+  text-align: center;
+  font-size: 32px;
+  font-family: koho;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.very-big{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#edit_user{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+#edit_user > label{
+  margin-left: 15px;
+}
+
+#user_email, #user_first_name, #user_last_name, #user_age, #user_description, #user_password, #user_password_confirmation, #user_current_password{
+  width: 367px;
+  margin-left: 14px;
+}
+
+input.one, input.two, input.three, input.four, input.five, input.six, input.seven{
+  width: 367px;
+}
+
+.user_email, .user_first_name, .user_last_name, .user_age, .user_description, .user_password, .user_password_confirmation, .user_current_password{
+  width: 397px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+}
+
+
+
+#cancel-boton{
+  height: 42px;
+  font-family: koho;
+  font-size: 20px;
+  background-color: rgb(229, 108, 108);
+  color: white;
+  border-radius: 5px;
+  border: 3px solid red;
+  font-weight: 600;
+  margin-top: 45px;
+}
+
+.back-boton{
+  height: 42px;
+  font-family: koho;
+  font-size: 20px;
+  background-color: $darkblue;
+  color: white;
+  border-radius: 5px;
+  border: 3px solid $mustardyellow;
+  margin-left: 15px;
+  padding: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+}

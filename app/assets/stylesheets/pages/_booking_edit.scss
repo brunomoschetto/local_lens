@@ -1,0 +1,72 @@
+.h1{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.grande-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 396px;
+  border: solid 3px $darkblue;
+  border-radius: 10px;
+}
+
+.form-control{
+  border: solid 3px $mustardyellow;
+  border-radius: 5px;
+  color: $darkblue;
+  height: 42px;
+}
+
+.submity > *{
+  margin-top: 15px;
+  height: 42px;
+  border: solid 3px $mustardyellow;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: $darkblue;
+  font-size: 20px;
+  font-family: koho;
+  margin-left: 15px;
+}
+
+.dateum-fecha{
+  margin-left: 15px;
+}
+
+#booking_date_1i, #booking_date_2i, #booking_date_3i{
+  height: 42px;
+  border: solid 3px $mustardyellow;
+  border-radius: 5px;
+  color: $darkblue;
+  font-family: koho;
+  font-size: 16px;
+  width: 122px;
+}
+
+#booking_message{
+  height: 84px;
+  color: $darkblue;
+  border: solid 3px $mustardyellow;
+  border-radius: 5px;
+  font-family: koho;
+  font-size: 16px;
+}
+
+#booking_capacity{
+  height: 42px;
+  border: solid 3px $mustardyellow;
+  border-radius: 5px;
+  color: $darkblue;
+  font-family: koho;
+  font-size: 16px;
+}
+
+#booking_capacity, #booking_message{
+  margin-left: 15px;
+}
