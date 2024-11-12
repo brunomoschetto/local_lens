@@ -1,8 +1,9 @@
 class BookingsController < ApplicationController
   def index
     @user = current_user
-    # @bookings = Booking.where(user_id: @user.id)
-    @bookings = current_user.bookings
+    @local = current_user.local
+    @user_bookings = current_user.bookings
+    @local_bookings = Booking.where(local_id: @local)
   end
 
   def new
@@ -30,7 +31,6 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
   end
 
-  # PATCH/PUT /locals/:local_id/bookings/:id
   def update
     @user = current_user
     @booking = Booking.find(params[:id])
