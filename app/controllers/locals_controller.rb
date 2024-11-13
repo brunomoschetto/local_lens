@@ -1,5 +1,6 @@
 class LocalsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:show, :index]
+  CATEGORIES = ["History", "Foodies", "Art", "Nightlife", "Nature", "Shopping", "Photography", "Mystery", "Wellness", "Sports", "Tech"]
 
   def show
     @local = Local.find(params[:id])
