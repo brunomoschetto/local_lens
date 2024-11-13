@@ -9,4 +9,9 @@ class User < ApplicationRecord
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  def local?
+    local.present?
+  end
+
 end
