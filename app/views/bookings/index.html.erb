@@ -1,31 +1,45 @@
 <div class="bookings-container">
-  <div class="booking-edit">
-    <button class="btn btn-profile" id="user-toggle" onclick="showUserBookings()">As User</button>
-    <button class="btn btn-profile" id="local-toggle" onclick="showLocalBookings()">As Local</button>
-  </div>
+  <% if @user.local? %>
+    <div class="booking-edit">
+      <button class="btn-profile active" id="user-toggle" onclick="showUserBookings()">Sent</button>
+      <button class="btn-profile" id="local-toggle" onclick="showLocalBookings()">Received</button>
+    </div>
 
-  <div id="user-bookings">
-    <h1>Your bookings as a User:</h1>
-    <% @user_bookings.each do |booking| %>
-      <%= render partial: "user_booking", locals: { booking: booking } %>
-    <% end %>
-  </div>
-  <div id="local-bookings">
-    <h1>Your bookings as a local:</h1>
-    <% @local_bookings.each do |booking| %>
-      <%= render partial: "local_booking", locals: { booking: booking } %>
-    <% end %>
-  </div>
+    <div id="user-bookings">
+      <h1>Upcoming bookings as a User:</h1>
+      <% @user_bookings.each do |booking| %>
+        <%= render partial: "user_booking", locals: { booking: booking } %>
+      <% end %>
+    </div>
+    <div id="local-bookings" class="d-none">
+      <h1>Upcoming bookings as a local:</h1>
+      <% @local_bookings.each do |booking| %>
+        <%= render partial: "local_booking", locals: { booking: booking } %>
+      <% end %>
+    </div>
+  <% else %>
+    <div id="user-bookings">
+      <h1>Upcoming Bookings:</h1>
+      <% @user_bookings.each do |booking| %>
+        <%= render partial: "user_booking", locals: { booking: booking } %>
+      <% end %>
+    </div>
+  <% end %>
 </div>
 
 <script>
+
   function showUserBookings() {
-    document.getElementById("user-bookings").style.display = "block";
-    document.getElementById("local-bookings").style.display = "none";
+    document.getElementById("user-bookings").classList.remove('d-none');
+    document.getElementById("user-toggle").classList.add('active');
+    document.getElementById("local-bookings").classList.add('d-none');
+    document.getElementById("local-toggle").classList.remove('active');
   }
 
   function showLocalBookings() {
-    document.getElementById("user-bookings").style.display = "none";
-    document.getElementById("local-bookings").style.display = "block";
+    document.getElementById("user-bookings").classList.add('d-none');
+    document.getElementById("user-toggle").classList.remove('active');
+    document.getElementById("local-bookings").classList.remove('d-none');
+    document.getElementById("local-toggle").classList.add('active');
   }
 </script>
