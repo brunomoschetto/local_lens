@@ -1,21 +1,30 @@
 <div class="bookings-container">
-  <div class="booking-edit">
-    <button class="btn-profile active" id="user-toggle" onclick="showUserBookings()">Sent</button>
-    <button class="btn-profile" id="local-toggle" onclick="showLocalBookings()">Received</button>
-  </div>
+  <% if @user.local? %>
+    <div class="booking-edit">
+      <button class="btn-profile active" id="user-toggle" onclick="showUserBookings()">Sent</button>
+      <button class="btn-profile" id="local-toggle" onclick="showLocalBookings()">Received</button>
+    </div>
 
-  <div id="user-bookings">
-    <h1>Your bookings as a User:</h1>
-    <% @user_bookings.each do |booking| %>
-      <%= render partial: "user_booking", locals: { booking: booking } %>
-    <% end %>
-  </div>
-  <div id="local-bookings" class="d-none">
-    <h1>Your bookings as a local:</h1>
-    <% @local_bookings.each do |booking| %>
-      <%= render partial: "local_booking", locals: { booking: booking } %>
-    <% end %>
-  </div>
+    <div id="user-bookings">
+      <h1>Upcoming bookings as a User:</h1>
+      <% @user_bookings.each do |booking| %>
+        <%= render partial: "user_booking", locals: { booking: booking } %>
+      <% end %>
+    </div>
+    <div id="local-bookings" class="d-none">
+      <h1>Upcoming bookings as a local:</h1>
+      <% @local_bookings.each do |booking| %>
+        <%= render partial: "local_booking", locals: { booking: booking } %>
+      <% end %>
+    </div>
+  <% else %>
+    <div id="user-bookings">
+      <h1>Upcoming Bookings:</h1>
+      <% @user_bookings.each do |booking| %>
+        <%= render partial: "user_booking", locals: { booking: booking } %>
+      <% end %>
+    </div>
+  <% end %>
 </div>
 
 <script>
