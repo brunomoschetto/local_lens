@@ -1,41 +1,44 @@
-<%= simple_form_for @local do |f| %>
-  <div class="form-group">
-    <%= f.input :first_name, label: "First Name", input_html: { value: @local.first_name || current_user.first_name } %>
-  </div>
+<h1 class="local-new-h1">New Local Form</h1>
+<div class="magnum-div">
+  <%= simple_form_for @local do |f| %>
+    <div class="form-group">
+      <%= f.input :first_name, label: "First Name", input_html: { value: @local.first_name || current_user.first_name } %>
+    </div>
 
-  <div class="form-group">
-    <%= f.input :last_name, label: "Last Name", input_html: { value: @local.last_name || current_user.last_name } %>
-  </div>
+    <div class="form-group">
+      <%= f.input :last_name, label: "Last Name", input_html: { value: @local.last_name || current_user.last_name } %>
+    </div>
 
-  <div class="form-group">
-    <%= f.input :name, label: "Local Name" %>
-  </div>
+    <div class="form-group">
+      <%= f.input :name, label: "Local Name" %>
+    </div>
 
-  <div class="form-group">
-    <%= f.input :languages, label: "Languages Spoken" %>
-  </div>
+    <div class="form-group">
+      <%= f.input :languages, label: "Languages Spoken" %>
+    </div>
 
-  <div class="form-group">
-    <%= f.input :city, label: "City" %>
-  </div>
+    <div class="form-group">
+      <%= f.input :city, label: "City" %>
+    </div>
 
-  <div class="form-group">
-    <%= f.input :categories, collection: CATEGORIES, label: "Categories" %>
-  </div>
+    <div class="form-group">
+      <%= f.input :categories, collection: CATEGORIES, label: "Categories" %>
+    </div>
 
-  <div class="form-group">
-    <%= f.input :age, label: "Age", input_html: { value: @local.age || current_user.age } %>
-  </div>
+    <div class="form-group">
+      <%= f.input :age, label: "Age", input_html: { value: @local.age || current_user.age } %>
+    </div>
 
-  <div class="form-group">
-    <%= f.input :description, label: "Description" %>
-  </div>
+    <div class="form-group">
+      <%= f.input :description, label: "Description" %>
+    </div>
 
-  <div class="form-group">
-    <%= f.input :photo, label: "Profile Photo", as: :file %>
-  </div>
+    <div class="form-group">
+      <%= f.input :photo, label: "Profile Photo", as: :file %>
+    </div>
 
-  <div class="form-group">
-    <%= f.button :submit, "Create Local", class: "btn btn-primary" %>
-  </div>
-<% end %>
+    <div class="submitation">
+      <%= f.button :submit, "Create Local", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
