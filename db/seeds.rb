@@ -1,4 +1,5 @@
 puts "Destroying all locals and users..."
+Review.destroy_all
 Booking.destroy_all
 Local.destroy_all
 User.destroy_all
