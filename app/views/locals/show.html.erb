@@ -2,8 +2,8 @@
   <div class="text-header">
    <h1><b><%= link_to "<    ", locals_path, class:"back-button" %></b><%= @local.first_name%> <%= @local.last_name %>'s Profile</h1>
   </div>
+  <!--Local card 1 -->
   <div class="local-profile-card">
-    <!--Local card 1 -->
     <div class="img-rating">
       <% if @local.photo.attached? %>
         <%= cl_image_tag @local.photo.key %>
@@ -25,26 +25,38 @@
         </h6>
       </div>
     </div>
-    <!--Local card 2-->
-    <div class="text-local-card">
+      <div class="text-local-card">
       <p> <b class="accent">Age:&nbsp; </b> <%= @local.age %>
       <br><b class="accent"> Categories: &nbsp;</b><%= @local.categories %></p>
     </div>
   </div>
-  <!--Local card 3 -->
+
+  <!-- #Availability button: -->
+  <p><%= link_to"Book!", new_local_booking_path(@local), class: "availability-localshow-btn"%></p>
+  <!--Local card 2 -->
   <div class="local-profile-card">
     <div class="text-local-card">
-      <p> <b class="accent">Speciality in <%= @local.city %></b>:
+      <p> <b class="accent">Speciality in <%= @local.city %></b>
       <br><p> <%= @local.description %></p>
     </div>
   </div>
-    <p class=""><%= link_to "Add a review", new_local_review_path(@local), class:"review-button", id:"reviews-border" %>
+ <!-- Local card 3 -->
   <div class="local-profile-card">
     <div class="text-local-card">
       <p><b class="accent">Languages</b></p>
       <p><%= @local.first_name %> can speak with you in:<b> <%= @local.languages %></b>.</p>
     </div>
   </div>
-  <!-- #Availability button: -->
-  <p><%= link_to"Book!", new_local_booking_path(@local), class: "availability-localshow-btn"%></p>
+  <!--Reviews card -->
+  <div class="local-profile-card">
+    <div class="text-local-card">
+      <p><b class="accent">Reviews</b></p>
+      <% @local_reviews.each do |review| %>
+        <p>"<%=review.title%>" &nbsp; (<%= review.user.first_name %>)</p>
+      <%end %>
+
+    </div>
+  </div>
+  <!-- #Add Review button: -->
+  <p class=""><%= link_to "Review #{@local.first_name}", new_local_review_path(@local), class:"availability-localshow-btn", id:"reviews-border" %>
 </div>

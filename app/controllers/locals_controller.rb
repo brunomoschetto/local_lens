@@ -4,6 +4,7 @@ class LocalsController < ApplicationController
   def show
     @local = Local.find(params[:id])
     @average_rating = @local.average_rating
+    @local_reviews = Review.where(local_id: @local).order(updated_at: :desc).limit(3)
   end
 
   def index

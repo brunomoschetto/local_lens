@@ -1,5 +1,5 @@
 <div class="container">
-  <%= simple_form_for @review do |f| %>
+  <%= simple_form_for [@local, @review] do |f| %>
     <div class="grande-div">
       <%= f.input :title, class: "date" %>
       <%= f.input :comment, class: "date" %>

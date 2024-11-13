@@ -1,9 +1,6 @@
 
 .container-local{
-  margin-top: -5px;
-  margin-bottom: -1px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: -5px -1px auto auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +54,7 @@
     font-family: 'KoHo', sans-serif;
     color: $darkblue;
     font-weight: 400;
-    padding: 15px 0px 10px 20px;
+    padding: 10px 10px 10px 10px;
   }
   .accent {
     color:$mustardyellow;

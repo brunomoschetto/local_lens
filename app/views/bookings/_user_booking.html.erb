@@ -13,7 +13,7 @@
   </div>
   <p>Capacity: <%= booking.capacity %> people</p>
   <div class="booking-edit">
-    <%= link_to "Delete", booking_path(booking), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-ghost" %>
-    <%= link_to "Edit", edit_booking_path(booking), class: "btn btn-ghost" %>
+    <%= link_to "Delete", booking_path(booking), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-blue" %>
+    <%= link_to "Edit", edit_booking_path(booking), class: "btn btn-blue" %>
   </div>
 </div>
