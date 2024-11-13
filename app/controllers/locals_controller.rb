@@ -14,18 +14,15 @@ class LocalsController < ApplicationController
         and categories ILIKE :categories
       SQL
       @locals = @locals.where(sql_subquery, city: "%#{params[:city]}%", categories: "%#{params[:categories]}%")
-
     elsif params[:city].present?
       sql_subquery = <<~SQL
         city ILIKE :city
       SQL
       @locals = @locals.where(sql_subquery, city: "%#{params[:city]}%")
-
     elsif params[:categories].present?
       sql_subquery = <<~SQL
         categories ILIKE :categories
       SQL
-
       @locals = @locals.where(sql_subquery, categories: "%#{params[:categories]}%")
     end
   end
