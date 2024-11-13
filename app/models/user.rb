@@ -5,8 +5,13 @@ class User < ApplicationRecord
   has_many :bookings
   has_one :local
   has_one_attached :photo
-  has_many :reviews
+  has_many :reviews, dependent: :destroy
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  def local?
+    local.present?
+  end
+
 end
