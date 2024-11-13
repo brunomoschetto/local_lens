@@ -4,6 +4,7 @@ class Local < ApplicationRecord
   has_many :bookings
   has_many :reviews
 
+  CATEGORIES = ["History", "Foodies", "Art", "Nightlife", "Nature", "Shopping", "Photography", "Mystery", "Wellness", "Sports", "Tech"]
   validates :categories, inclusion: { in: CATEGORIES, message: "%{value} is not a valid category" }
 
   def average_rating
