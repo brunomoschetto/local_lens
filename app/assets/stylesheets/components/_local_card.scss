@@ -34,9 +34,9 @@
       border-top-left-radius: 10px;
     }
     .rating-stars{
-      position: relative;
       // bottom: 20px; left: 227px; (this is to the rigt border bottom of the pic)
-      top: 10px; left: 20px;
+      margin-top: 10px;
+      margin-left: 10px;
       font-weight: bold;
       padding: auto;
       background-color: white;
