@@ -1,7 +1,7 @@
 class Local < ApplicationRecord
   belongs_to :user
   has_one_attached :photo
-  has_many :bookings
+  has_many :bookings, dependent: :destroy
   has_many :reviews, dependent: :destroy
 
   CATEGORIES = ["History", "Foodies", "Art", "Nightlife", "Nature", "Shopping", "Photography", "Mystery", "Wellness", "Sports", "Tech"]
