@@ -12,11 +12,13 @@
   </div>
 
   <div class="form-group">
-    <%= f.input :languages, label: "Languages Spoken" %>
+    <% languages = ["German", "English", "Spanish", "French", "Italian", "Russian", "Hindi"] %>
+    <%= f.input :languages, label: "Languages Spoken", collection: languages %>
   </div>
 
   <div class="form-group">
-    <%= f.input :city, label: "City" %>
+    <% cities = ["Berlin", "Munich", "Hamburg", "Cologne", "Frankfurt", "Bonn", "Dusseldorf"] %>
+    <%= f.input :city, label: "City", collection: cities %>
   </div>
 
   <div class="form-group">

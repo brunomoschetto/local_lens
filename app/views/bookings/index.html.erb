@@ -1,18 +1,17 @@
 <div class="bookings-container">
   <% if @user.local? %>
+    <h1>Bookings as a:</h1>
     <div class="booking-edit">
-      <button class="btn-profile active" id="user-toggle" onclick="showUserBookings()">Sent</button>
-      <button class="btn-profile" id="local-toggle" onclick="showLocalBookings()">Received</button>
+      <button class="btn-profile" id="user-toggle" onclick="showUserBookings()">Guest</button>
+      <button class="btn-profile disable" id="local-toggle" onclick="showLocalBookings()">Host</button>
     </div>
 
     <div id="user-bookings">
-      <h1>Upcoming bookings as a User:</h1>
       <% @user_bookings.each do |booking| %>
         <%= render partial: "user_booking", locals: { booking: booking } %>
       <% end %>
     </div>
     <div id="local-bookings" class="d-none">
-      <h1>Upcoming bookings as a local:</h1>
       <% @local_bookings.each do |booking| %>
         <%= render partial: "local_booking", locals: { booking: booking } %>
       <% end %>
@@ -31,15 +30,15 @@
 
   function showUserBookings() {
     document.getElementById("user-bookings").classList.remove('d-none');
-    document.getElementById("user-toggle").classList.add('active');
+    document.getElementById("user-toggle").classList.remove('disable');
     document.getElementById("local-bookings").classList.add('d-none');
-    document.getElementById("local-toggle").classList.remove('active');
+    document.getElementById("local-toggle").classList.add('disable');
   }
 
   function showLocalBookings() {
     document.getElementById("user-bookings").classList.add('d-none');
-    document.getElementById("user-toggle").classList.remove('active');
+    document.getElementById("user-toggle").classList.add('disable');
     document.getElementById("local-bookings").classList.remove('d-none');
-    document.getElementById("local-toggle").classList.add('active');
+    document.getElementById("local-toggle").classList.remove('disable');
   }
 </script>
