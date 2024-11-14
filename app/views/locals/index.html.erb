@@ -4,7 +4,6 @@
   </div>
   <div class="local-index">
     <% @locals.each do |local| %>
-      <% unless local.user_id == current_user.id %>
         <%= link_to local_path(local), style: "text-decoration: none; color: inherit;" do %>
           <div class="card-product">
             <div class="info">
@@ -26,6 +25,5 @@
           </div>
         <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
-</div>

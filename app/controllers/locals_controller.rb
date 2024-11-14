@@ -9,7 +9,13 @@ class LocalsController < ApplicationController
   end
 
   def index
-    @locals = Local.all
+
+    if user_signed_in?
+      @locals = Local.where.not(user: current_user)
+    else
+      @locals = Local.all
+    end
+
     if params[:city].present? && params[:categories].present?
       sql_subquery = <<~SQL
         city ILIKE :city
