@@ -13,13 +13,11 @@
   </div>
 
   <div class="form-group">
-    <% languages = ["German", "English", "Spanish", "French", "Italian", "Russian", "Hindi"] %>
-    <%= f.input :languages, label: "Languages Spoken", collection: languages %>
+    <%= f.input :languages, label: "Languages Spoken", collection: LANGUAGES %>
   </div>
 
   <div class="form-group">
-    <% cities = ["Berlin", "Munich", "Hamburg", "Cologne", "Frankfurt", "Bonn", "Dusseldorf"] %>
-    <%= f.input :city, label: "City", collection: cities %>
+    <%= f.input :city, label: "City", collection: CITIES %>
   </div>
 
   <div class="form-group">
@@ -35,7 +33,11 @@
   </div>
 
   <div class="form-group">
-    <%= f.input :photo, label: "Profile Photo", as: :file %>
+    <% if current_user.photo.attached? %>
+      <%= cl_image_tag current_user.photo.key, alt: "Profile Photo", class: "avatar-square" %>
+    <% else %>
+      <%= f.input :photo, label: "Profile Photo", as: :file %>
+    <% end %>
   </div>
 
   <div class="form-group">
