@@ -167,8 +167,8 @@ user15 = User.create!(
   age: 34,
   description: "Data Analytics Lecturer/Lead TA @ Le Wagon Berlin | #954"
 )
-file = URI.parse("https://ca.slack-edge.com/T02NE0241-U03N6ST66G2-53dc67eb8944-512").open
-user15.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
+# file = URI.parse("https://ca.slack-edge.com/T02NE0241-U03N6ST66G2-53dc67eb8944-512").open
+# user15.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 puts "Creating locals..."
 local1 = Local.create!(
