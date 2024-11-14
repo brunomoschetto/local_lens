@@ -41,7 +41,7 @@
     </div>
     <!-- end of top navbar-->
 
-    <div class="main-container">
+    <div class="main-container" data-controller="alerts">
       <%= yield %>
       <% if flash[:notice] %>
         <div class="alert alert-success flash-container" role="alert">
