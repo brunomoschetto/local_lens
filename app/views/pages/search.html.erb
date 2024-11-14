@@ -17,8 +17,8 @@
         <div class="andor">AND/OR</div>
         <div class="taggy"><%= label_tag 'Categories' %></div>
           <div>
-            <%= text_field_tag :categories,
-                params[:categories],
+            <%= select_tag :categories,
+                options_for_select(CATEGORIES, params[:categories]),
                 class: "categories_",
                 palceholder: "Type the category you would like"
             %>
