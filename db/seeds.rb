@@ -35,8 +35,8 @@ user3 = User.create!(
   age: 35,
   description: "Third user example description."
 )
-file = URI.parse("https://ca.slack-edge.com/T02NE0241-U078ZEE9DD5-efe4013a4410-512").open
-user3.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
+# file = URI.parse("https://ca.slack-edge.com/T02NE0241-U078ZEE9DD5-efe4013a4410-512").open
+# user3.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 user4 = User.create!(
   email: "joel@example.com",
