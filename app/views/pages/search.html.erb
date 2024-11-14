@@ -20,7 +20,7 @@
         <div class="taggy"><%= label_tag 'Categories' %></div>
           <div>
             <%= select_tag :categories,
-                options_for_select(CATEGORIES, params[:categories]),
+                options_for_select(CATEGORIESDROP, params[:categories]),
                 class: "categories_",
                 palceholder: "Type the category you would like"
             %>
