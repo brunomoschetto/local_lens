@@ -2,12 +2,11 @@
   <%= simple_form_for [@local, @booking] do |f| %>
     <div class="grande-div">
       <%= f.input :date %>
-      <%= f.input :message, class: "date" %>
+      <%= f.input :message, class: "text" %>
       <%= f.input :capacity, class: "date" %>
       <div class="submity">
         <%= f.submit %>
       </div>
     </div>
   <% end %>
-</div>
 </div>

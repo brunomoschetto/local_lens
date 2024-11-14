@@ -17,10 +17,10 @@ file = URI.parse("https://ca.slack-edge.com/T02NE0241-U0798RQTAGJ-da2be305fd9a-5
 user1.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 user2 = User.create!(
-  email: "judith@example.com",
-  password: "passwordjudith",
-  first_name: "Judith",
-  last_name: "B",
+  email: "judit@example.com",
+  password: "passwordjudit",
+  first_name: "Judit",
+  last_name: "Borrás",
   age: 30,
   description: "Second user example description."
 )
@@ -393,7 +393,7 @@ Local.all.each do |local|
       user_id: User.all.sample.id,
       title: "Great experience with #{local.first_name}",
       comment: "This was an amazing tour with #{local.first_name}. Learned a lot and had a wonderful time!",
-      rating: rand(1..5)
+      rating: rand(2..5)
     )
   end
 end

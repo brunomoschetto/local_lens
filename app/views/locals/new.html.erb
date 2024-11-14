@@ -1,3 +1,4 @@
+
 <%= simple_form_for @local do |f| %>
   <div class="form-group">
     <%= f.input :first_name, label: "First Name", input_html: { value: @local.first_name || current_user.first_name } %>

@@ -1,0 +1,58 @@
+.local-new-h1{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-family: koho;
+}
+
+.magnum-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 397px;
+  border: solid 3px $darkblue;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.submitation > *{
+  margin-top: 15px;
+  height: 42px;
+  border: solid 3px $mustardyellow;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: $darkblue;
+  font-size: 20px;
+  font-family: koho;
+  margin-left: 15px;
+}
+
+.magnum-div .local_first_name, .magnum-div .local_last_name, .magnum-div .local_name, .magnum-div .local_language, .magnum-div .local_city, .magnum-div .local_categories, .magnum-div .local_age, .magnum-div .local_description, .magnum-div .local_photo{
+  width: 367px;
+}
+
+.magnum-div > input{
+  width: 367px;
+}
+
+.magnum-div input,textarea,select{
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 367px;
+  border: 3px solid $mustardyellow !important;
+  border-radius: 5px !important;
+}
+
+#local_description{
+  margin-bottom: 15px;
+  margin-right: 0px;
+  width: 367px;
+}
+
+.magnum-div label{
+  margin-left: 0;
+}
