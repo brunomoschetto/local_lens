@@ -44,6 +44,9 @@ class LocalsController < ApplicationController
   def create
     @local = Local.new(local_params)
     @local.user = current_user
+    if current_user.photo.attached?
+      @local.photo.attach(current_user.photo.blob)
+    end
 
     if @local.save
       redirect_to @local, notice: "Local successfully created"
