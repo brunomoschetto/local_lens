@@ -31,6 +31,10 @@
                     required: true,
                     autofocus: true,
                     input_html: { autocomplete: "description", class: "emailpassword" } %>
+        <%= f.input :photo,
+                    required: false,
+                    autofocus: true,
+                    input_html: { autocomplete: "photo", class: "emailpassword" } %>
         <div class="form-actions-2">
           <%= f.button :submit, "Sign up", class: "login-boton-2" %>
           <div class="render">
