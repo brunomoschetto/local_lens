@@ -5,7 +5,7 @@ class Local < ApplicationRecord
   has_many :reviews, dependent: :destroy
 
   validates :categories, inclusion: { in: CATEGORIES, message: "%{value} is not a valid category" }
-  validates :first_name, :last_name,:languages, :city, :age, :description, presence: true
+  validates :first_name, :last_name, :languages, :city, :age, :description, presence: true
 
   def average_rating
     return 0 if reviews.empty?

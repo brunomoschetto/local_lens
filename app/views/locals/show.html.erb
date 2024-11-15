@@ -31,8 +31,8 @@
     </div>
   </div>
 
-  <!-- #Availability button: -->
-  <p><%= link_to"Book Now", new_local_booking_path(@local), class: "availability-localshow-btn"%></p>
+  <!-- #book button: -->
+  <p><%= link_to"Book Now", new_local_booking_path(@local), class: "book-button"%></p>
   <!--Local card 2 -->
   <div class="local-profile-card">
     <div class="text-local-card">
@@ -51,12 +51,23 @@
   <div class="local-profile-card">
     <div class="text-local-card">
       <p><b class="accent">Reviews</b></p>
-      <% @local_reviews.each do |review| %>
-        <p>"<%=review.title%>" &nbsp; (<%= review.user.first_name %>)</p>
-      <%end %>
-
     </div>
+    <% @local_reviews.each do |review| %>
+      <%# pale line between cards %>
+      <div class="paleline"></div>
+      <div class="review-profile-card">
+        <div class="text-local-card">
+          <div class="review-title"><p><b><i>"<%=review.title%>"</i></b></div>
+          <div class="review-comment"><p><%= review.comment %></p></div>
+        </div>
+        <div class="rating-user-container">
+          <div class="user-rating"><p><b>Rating: <%=review.rating %></b></p></div>
+          <div><p>(<%= review.user.first_name %>)</p></div>
+        </div>
+      </div>
+    <%end %>
   </div>
+
   <!-- #Add Review button: -->
-  <p class=""><%= link_to "Review #{@local.first_name}", new_local_review_path(@local), class:"availability-localshow-btn", id:"reviews-border" %>
+  <p class=""><%= link_to "Review #{@local.first_name}", new_local_review_path(@local), class:"review-btn", id:"reviews-border" %>
 </div>
