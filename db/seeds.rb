@@ -305,176 +305,178 @@ local10 = Local.create!(
 local10.photo.attach(user10.photo.blob)
 
 
-# def attach_random_photo(user)
-#   photo_url = Faker::Avatar.image
-#   file = URI.parse(photo_url).open
-#   user.photo.attach(io: file, filename: "#{user.first_name.downcase}_#{user.last_name.downcase}.jpg", content_type: "image/jpg")
-# end
-
-# 50.times do
-#   first_name = Faker::Name.first_name
-#   last_name = Faker::Name.last_name
-#   age = rand(18..60)
-#   description = Faker::Lorem.sentence(word_count: 10)
-
-#   user = User.create!(
-#     email: Faker::Internet.email(name: "#{first_name} #{last_name}"),
-#     password: Faker::Internet.password(min_length: 6),
-#     first_name: first_name,
-#     last_name: last_name,
-#     age: age,
-#     description: description
-#   )
-
-#   attach_random_photo(user)
-# end
-
-# users = User.all
-
-# puts "Creating locals..."
-# local = {}
-# used_cities = []
-
-# 50.times do |i|
-#   user = users[i % users.length]
-#   city = CITIES.reject { |c| used_cities.include?(c) }.sample
-#   category = CATEGORIES.sample
-#   language = LANGUAGES.sample || "English"
-
-#   local_name = "local#{i + 1}"
-#   used_cities << city
-
-#   local[local_name] = Local.create!(
-#     first_name: user.first_name,
-#     last_name: user.last_name,
-#     name: "#{user.first_name} #{user.last_name}",
-#     city: city,
-#     languages: language,
-#     categories: category,
-#     age: rand(25..40),
-#     user_id: user.id,
-#     description: "Experienced guide specializing in #{category.downcase} in #{city}."
-#   )
-#   local[local_name].photo.attach(user.photo.blob)
-# end
-
-# puts "50 locals created successfully!"
-
 # puts "Creating bookings..."
+# Booking.create!(
+  #   local_id: local1.id,
+  #   user_id: user3.id,
+  #   date: Date.today + 5,
+  #   message: "Looking forward to a historical tour in Berlin.",
+  #   capacity: 4
+  # )
 
-# local.each do |name, object|
-#   2.times do
-#     eligible_users = users.reject { |user| user.id == object.user_id }
-#     selected_user = eligible_users.sample
+  # Booking.create!(
+    #   local_id: local2.id,
+    #   user_id: user3.id,
+    #   date: Date.today + 10,
+    #   message: "Excited for an art and nature experience in Munich.",
+    #   capacity: 2
+    # )
 
-#     Booking.create!(
-#       local_id: object.id,
-#       user_id: selected_user.id,
-#       date: Date.today + rand(1..30),
-#       message: "Excited to explore #{object.city} with a focus on #{object.categories.downcase}.",
-#       capacity: rand(1..5)
-#     )
-#   end
-# end
+    # Booking.create!(
+      #   local_id: local3.id,
+      #   user_id: user4.id,
+      #   date: Date.today + 15,
+#   message: "Please show me around Cologne’s architecture and nightlife!",
+#   capacity: 3
+# )
 
-# puts "10 bookings created successfully!"
+# Booking.create!(
+  #   local_id: local4.id,
+  #   user_id: user5.id,
+  #   date: Date.today + 20,
+  #   message: "Looking forward to exploring Frankfurt's financial district and shops.",
+  #   capacity: 1
+  # )
 
+  # Booking.create!(
+    #   local_id: local5.id,
+    #   user_id: user6.id,
+    #   date: Date.today + 25,
+    #   message: "Can’t wait to discover Hamburg’s music and food culture.",
+    #   capacity: 2
+    # )
+
+    # Booking.create!(
+      #   local_id: local6.id,
+      #   user_id: user7.id,
+      #   date: Date.today + 30,
+      #   message: "Interested in the tech and art scene in Stuttgart.",
+      #   capacity: 3
+      # )
+
+      # Booking.create!(
+        #   local_id: local7.id,
+        #   user_id: user8.id,
+        #   date: Date.today + 35,
+        #   message: "Excited to learn more about Japanese culture in Düsseldorf.",
+        #   capacity: 2
+        # )
+
+        # Booking.create!(
+          #   local_id: local8.id,
+#   user_id: user9.id,
+#   date: Date.today + 40,
+#   message: "Show me the historic and festive side of Nuremberg.",
+#   capacity: 4
+# )
+
+# Booking.create!(
+  #   local_id: local9.id,
+  #   user_id: user9.id,
+  #   date: Date.today + 45,
+  #   message: "Interested in Bonn's science and outdoor activities.",
+  #   capacity: 5
+  # )
+
+  # Booking.create!(
+    #   local_id: local10.id,
+    #   user_id: user10.id,
+    #   date: Date.today + 50,
+    #   message: "Looking forward to exploring Leipzig's art and literature scene.",
+    #   capacity: 3
+    # )
+
+    # puts "#{User.count} users, #{Local.count} locals, and #{Booking.count} bookings created."
+
+    puts "Creating reviews..."
+
+    Local.all.each do |local|
+      3.times do |i|
+        Review.create!(
+          local_id: local.id,
+          user_id: User.all.sample.id,
+          title: "Great experience with #{local.first_name}",
+          comment: "This was an amazing tour with #{local.first_name}. Learned a lot and had a wonderful time!",
+          rating: rand(3..5)
+        )
+      end
+    end
+
+puts "#{Review.count} reviews created."
+
+# ---------------------------------
+
+def attach_random_photo(user)
+  photo_url = Faker::Avatar.image
+  file = URI.parse(photo_url).open
+  user.photo.attach(io: file, filename: "#{user.first_name.downcase}_#{user.last_name.downcase}.jpg", content_type: "image/jpg")
+end
+
+puts "creating users.."
+50.times do
+  first_name = Faker::Name.first_name
+  last_name = Faker::Name.last_name
+  age = rand(18..60)
+  description = Faker::Lorem.sentence(word_count: 10)
+
+  user = User.create!(
+    email: Faker::Internet.email(name: "#{first_name} #{last_name}"),
+    password: Faker::Internet.password(min_length: 6),
+    first_name: first_name,
+    last_name: last_name,
+    age: age,
+    description: description
+  )
+
+  attach_random_photo(user)
+end
+
+puts "50 users created"
+
+users = User.where.not(id: 1..15)
+
+puts "Creating locals..."
+local = {}
+
+50.times do |i|
+  user = users[i % users.length]
+  city = CITIES.sample
+  category = CATEGORIES.sample
+  language = LANGUAGES.sample || "English"
+
+  local_name = "local#{i + 10}"
+
+  local[local_name] = Local.create!(
+    first_name: user.first_name,
+    last_name: user.last_name,
+    name: "#{user.first_name} #{user.last_name}",
+    city: city,
+    languages: language,
+    categories: category,
+    age: rand(25..40),
+    user_id: user.id,
+    description: "Experienced guide specializing in #{category.downcase} in #{city}."
+  )
+  local[local_name].photo.attach(user.photo.blob)
+end
+
+puts "50 locals created successfully!"
 
 puts "Creating bookings..."
-Booking.create!(
-  local_id: local1.id,
-  user_id: user3.id,
-  date: Date.today + 5,
-  message: "Looking forward to a historical tour in Berlin.",
-  capacity: 4
-)
 
-Booking.create!(
-  local_id: local2.id,
-  user_id: user3.id,
-  date: Date.today + 10,
-  message: "Excited for an art and nature experience in Munich.",
-  capacity: 2
-)
+local.each do |name, object|
+  2.times do
+    eligible_users = users.reject { |user| user.id == object.user_id }
+    selected_user = eligible_users.sample
 
-Booking.create!(
-  local_id: local3.id,
-  user_id: user4.id,
-  date: Date.today + 15,
-  message: "Please show me around Cologne’s architecture and nightlife!",
-  capacity: 3
-)
-
-Booking.create!(
-  local_id: local4.id,
-  user_id: user5.id,
-  date: Date.today + 20,
-  message: "Looking forward to exploring Frankfurt's financial district and shops.",
-  capacity: 1
-)
-
-Booking.create!(
-  local_id: local5.id,
-  user_id: user6.id,
-  date: Date.today + 25,
-  message: "Can’t wait to discover Hamburg’s music and food culture.",
-  capacity: 2
-)
-
-Booking.create!(
-  local_id: local6.id,
-  user_id: user7.id,
-  date: Date.today + 30,
-  message: "Interested in the tech and art scene in Stuttgart.",
-  capacity: 3
-)
-
-Booking.create!(
-  local_id: local7.id,
-  user_id: user8.id,
-  date: Date.today + 35,
-  message: "Excited to learn more about Japanese culture in Düsseldorf.",
-  capacity: 2
-)
-
-Booking.create!(
-  local_id: local8.id,
-  user_id: user9.id,
-  date: Date.today + 40,
-  message: "Show me the historic and festive side of Nuremberg.",
-  capacity: 4
-)
-
-Booking.create!(
-  local_id: local9.id,
-  user_id: user9.id,
-  date: Date.today + 45,
-  message: "Interested in Bonn's science and outdoor activities.",
-  capacity: 5
-)
-
-Booking.create!(
-  local_id: local10.id,
-  user_id: user10.id,
-  date: Date.today + 50,
-  message: "Looking forward to exploring Leipzig's art and literature scene.",
-  capacity: 3
-)
-
-puts "#{User.count} users, #{Local.count} locals, and #{Booking.count} bookings created."
-
-puts "Creating reviews..."
-
-Local.all.each do |local|
-  3.times do |i|
-    Review.create!(
-      local_id: local.id,
-      user_id: User.all.sample.id,
-      title: "Great experience with #{local.first_name}",
-      comment: "This was an amazing tour with #{local.first_name}. Learned a lot and had a wonderful time!",
-      rating: rand(2..5)
+    Booking.create!(
+      local_id: object.id,
+      user_id: selected_user.id,
+      date: Date.today + rand(1..30),
+      message: "Excited to explore #{object.city} with a focus on #{object.categories.downcase}.",
+      capacity: rand(1..5)
     )
   end
 end
 
-puts "#{Review.count} reviews created."
+puts "10 bookings created successfully!"
