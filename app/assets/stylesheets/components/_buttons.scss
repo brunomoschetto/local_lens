@@ -29,33 +29,35 @@
 //--^^^This is the end of the smaller button attached to the profile of the local^^^--//
 
 //--This is the bigger button attached to the profile of the local--//
-.availability-button{
+.book-button{
   text-decoration: none; //--to remove underlines from links
-  width: 397px;
+  width: 387px;
   height: 60px;
-  border: solid 3px $mustardyellow;
-  color: white;
+  border: solid 2px $mustardyellow;
+  color: $mustardyellow;
   text-align: center;
   border-radius: 10px;
-  font-weight: 500;
-  background-color: $mustardyellow;
+  font-weight: 600;
+  background-color: $darkblue;
   font-family: koho;
   font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
+  margin-bottom: -15px;
   box-shadow: 3px 3px 5px rgb(151, 151, 151);
 }
 
-.availability-localshow-btn{
+.review-btn{
   text-decoration: none; //--to remove underlines from links
   width: 387px;
   height: 60px;
-  border: solid 0px $mustardyellow;
-  color: white;
+  border: solid 2px $darkblue;
+  color: $darkblue;
   text-align: center;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 600;
   background-color: $mustardyellow;
   font-family: koho;
   font-size: 24px;
