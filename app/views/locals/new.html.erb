@@ -34,11 +34,7 @@
     </div>
 
     <div class="form-group">
-      <% if current_user.photo.attached? %>
-        <%= cl_image_tag current_user.photo.key, alt: "Profile Photo", class: "avatar-square" %>
-      <% else %>
-        <%= f.input :photo, label: "Profile Photo", as: :file %>
-      <% end %>
+      <%= f.input :photo, label: "Photo", input_html: { value: @local.photo || current_user.photo } %>
     </div>
 
     <div class="submitation">

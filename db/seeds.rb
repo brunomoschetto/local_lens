@@ -1,3 +1,6 @@
+require 'faker'
+require 'open-uri'
+
 puts "Destroying all locals and users..."
 Review.destroy_all
 Booking.destroy_all
@@ -35,8 +38,8 @@ user3 = User.create!(
   age: 35,
   description: "Third user example description."
 )
-# file = URI.parse("https://ca.slack-edge.com/T02NE0241-U078ZEE9DD5-efe4013a4410-512").open
-# user3.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
+file = URI.parse("https://ca.slack-edge.com/T02NE0241-U078ZEE9DD5-efe4013a4410-512").open
+user3.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 user4 = User.create!(
   email: "joel@example.com",
@@ -167,8 +170,8 @@ user15 = User.create!(
   age: 34,
   description: "Data Analytics Lecturer/Lead TA @ Le Wagon Berlin | #954"
 )
-# file = URI.parse("https://ca.slack-edge.com/T02NE0241-U03N6ST66G2-53dc67eb8944-512").open
-# user15.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
+file = URI.parse("https://ca.slack-edge.com/T02NE0241-U03N6ST66G2-53dc67eb8944-512").open
+user15.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 puts "Creating locals..."
 local1 = Local.create!(
@@ -300,6 +303,82 @@ local10 = Local.create!(
   description: "Familiar with Leipzig's literary heritage and art scene."
 )
 local10.photo.attach(user10.photo.blob)
+
+
+# def attach_random_photo(user)
+#   photo_url = Faker::Avatar.image
+#   file = URI.parse(photo_url).open
+#   user.photo.attach(io: file, filename: "#{user.first_name.downcase}_#{user.last_name.downcase}.jpg", content_type: "image/jpg")
+# end
+
+# 50.times do
+#   first_name = Faker::Name.first_name
+#   last_name = Faker::Name.last_name
+#   age = rand(18..60)
+#   description = Faker::Lorem.sentence(word_count: 10)
+
+#   user = User.create!(
+#     email: Faker::Internet.email(name: "#{first_name} #{last_name}"),
+#     password: Faker::Internet.password(min_length: 6),
+#     first_name: first_name,
+#     last_name: last_name,
+#     age: age,
+#     description: description
+#   )
+
+#   attach_random_photo(user)
+# end
+
+# users = User.all
+
+# puts "Creating locals..."
+# local = {}
+# used_cities = []
+
+# 50.times do |i|
+#   user = users[i % users.length]
+#   city = CITIES.reject { |c| used_cities.include?(c) }.sample
+#   category = CATEGORIES.sample
+#   language = LANGUAGES.sample || "English"
+
+#   local_name = "local#{i + 1}"
+#   used_cities << city
+
+#   local[local_name] = Local.create!(
+#     first_name: user.first_name,
+#     last_name: user.last_name,
+#     name: "#{user.first_name} #{user.last_name}",
+#     city: city,
+#     languages: language,
+#     categories: category,
+#     age: rand(25..40),
+#     user_id: user.id,
+#     description: "Experienced guide specializing in #{category.downcase} in #{city}."
+#   )
+#   local[local_name].photo.attach(user.photo.blob)
+# end
+
+# puts "50 locals created successfully!"
+
+# puts "Creating bookings..."
+
+# local.each do |name, object|
+#   2.times do
+#     eligible_users = users.reject { |user| user.id == object.user_id }
+#     selected_user = eligible_users.sample
+
+#     Booking.create!(
+#       local_id: object.id,
+#       user_id: selected_user.id,
+#       date: Date.today + rand(1..30),
+#       message: "Excited to explore #{object.city} with a focus on #{object.categories.downcase}.",
+#       capacity: rand(1..5)
+#     )
+#   end
+# end
+
+# puts "10 bookings created successfully!"
+
 
 puts "Creating bookings..."
 Booking.create!(
