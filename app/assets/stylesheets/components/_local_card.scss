@@ -23,30 +23,38 @@
   font-size: large;
   margin-top: 10px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  border: 2px solid $mustardyellow;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 
   // container with profile image and rating
   .img-rating{
     img {
-      width: 387px;
+      width: 383px;
       height: 350px;
       object-fit: cover;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
+      border-bottom: 2px solid $mustardyellow;
     }
     .rating-stars{
-      position: relative;
       // bottom: 20px; left: 227px; (this is to the rigt border bottom of the pic)
-      top: 10px; left: 20px;
+      margin-top: 10px;
+      margin-left: 20px;
       font-weight: bold;
+      font-size: 21px;
       padding: auto;
       background-color: white;
-      width: 35vw;
+      width: 50vw;
       border-radius: 5px;
       .checked{
-        color: $mustardyellow;
+        font-size: 21px;
       }
       span{
         color: rgb(143, 141, 141);
+        margin-top: 3px;
+        font-size: 19px;
+        font-weight: 500;
       }
     }
   }
@@ -54,12 +62,37 @@
     font-family: 'KoHo', sans-serif;
     color: $darkblue;
     font-weight: 400;
-    padding: 10px 10px 10px 10px;
+    font-size: 19px;
+    padding: 10px 0px 15px 10px;
+    margin-left: 15px;
+    margin-right: 10px;
   }
   .accent {
-    color:$mustardyellow;
+    font-size: 21px;
+  }
+  .review-profile-card{
+    display: grid;
+
+  }
+  .paleline{
+    border-bottom: 2px solid $paleblue;
+  }
+  .rating-user-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: $darkblue;
   }
 
+  .review-title{
+    text-align: right;
+    margin-right: 25px;
+  }
+  .user-rating{
+    color: $darkblue;
+  }
 }
 
 // This is for future see "reviews button" style ---
