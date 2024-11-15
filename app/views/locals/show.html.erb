@@ -32,7 +32,11 @@
   </div>
 
   <!-- #book button: -->
-  <p><%= link_to"Book Now", new_local_booking_path(@local), class: "book-button"%></p>
+  <% if current_user.id == @local.user.id %>
+    <p class="book-button">"You cannot book yourself!!"</p>
+  <% else %>
+    <p><%= link_to"Book Now", new_local_booking_path(@local), class: "book-button"%></p>
+  <% end %>
   <!--Local card 2 -->
   <div class="local-profile-card">
     <div class="text-local-card">
@@ -69,5 +73,9 @@
   </div>
 
   <!-- #Add Review button: -->
-  <p class=""><%= link_to "Review #{@local.first_name}", new_local_review_path(@local), class:"review-btn", id:"reviews-border" %>
+  <% if current_user.id == @local.user.id %>
+    <p class="review-btn">"You cannot review yourself!!"</p>
+  <% else %>
+    <p class=""><%= link_to "Review #{@local.first_name}", new_local_review_path(@local), class:"review-btn", id:"reviews-border" %>
+  <% end %>
 </div>
