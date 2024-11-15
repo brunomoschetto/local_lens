@@ -1,13 +1,10 @@
-<div class="container">
   <%= simple_form_for [@local, @review] do |f| %>
-    <div class="grande-div">
-      <%= f.input :title, class: "date" %>
-      <%= f.input :comment, class: "date" %>
+    <div class="reviews-div">
+      <%= f.input :title %>
+      <%= f.input :comment %>
       <%= f.input :rating %>
-
       <div class="submity">
         <%= f.submit %>
       </div>
     </div>
   <% end %>
-</div>

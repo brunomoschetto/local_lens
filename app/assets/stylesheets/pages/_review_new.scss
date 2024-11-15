@@ -1,0 +1,29 @@
+
+.review-h1{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom:15px;
+  font-size: 32px;
+}
+
+#review_title, #review_rating{
+  margin-left: 15px;
+  width: 356px;
+}
+
+#review_comment{
+  margin-left: 15px;
+  height: 84px;
+  width: 356px;
+}
+.reviews-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 396px;
+  border: solid 3px $darkblue;
+  border-radius: 10px;
+
+}
+
