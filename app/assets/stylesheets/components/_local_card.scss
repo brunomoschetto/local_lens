@@ -21,7 +21,7 @@
   background-color: white;
   font-family: 'KoHo', sans-serif;
   font-size: large;
-  margin-top: 10px;
+  margin: 10px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   border: 2px solid $mustardyellow;
   border-bottom-right-radius: 10px;
@@ -30,8 +30,8 @@
   // container with profile image and rating
   .img-rating{
     img {
-      width: 383px;
-      height: 350px;
+      width: 384px;
+      height: 320px;
       object-fit: cover;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
