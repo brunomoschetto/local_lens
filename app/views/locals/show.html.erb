@@ -74,8 +74,8 @@
 
   <!-- #Add Review button: -->
   <% if current_user.id == @local.user.id %>
-    <p class="review-btn">"You cannot review yourself!!"</p>
+    <p class="book-button">"You cannot review yourself!!"</p>
   <% else %>
-    <p class=""><%= link_to "Review #{@local.first_name}", new_local_review_path(@local), class:"review-btn", id:"reviews-border" %>
+    <p><%= link_to "Review #{@local.first_name}", new_local_review_path(@local), class:"book-button", id:"reviews-border" %>
   <% end %>
 </div>

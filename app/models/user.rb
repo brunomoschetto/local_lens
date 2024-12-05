@@ -14,5 +14,4 @@ class User < ApplicationRecord
   def local?
     local.present?
   end
-
 end

@@ -33,7 +33,7 @@
   text-decoration: none; //--to remove underlines from links
   width: 387px;
   height: 60px;
-  // border: solid 2px $mustardyellow;
+  // border: solid 1px $mustardyellow;
   color: #fff;
   text-align: center;
   border-radius: 10px;
@@ -44,13 +44,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
-  margin-bottom: -15px;
+  margin: 5px;
   box-shadow: 3px 3px 5px rgb(151, 151, 151);
 }
 
 .review-btn{
-  text-decoration: none; //--to remove underlines from links
+  text-decoration: none;
   width: 387px;
   height: 60px;
   border: solid 1px $darkblue;
@@ -159,8 +158,8 @@
   text-decoration: none; //--to remove underlines from links
   width: 357px;
   height: 40px;
-  border: solid 3px #e1ad01;
-  color: #e1ad01;
+  // border: solid 3px #e1ad01;
+  color: white;
   text-align: center;
   border-radius: 10px;
   font-weight: 600;
